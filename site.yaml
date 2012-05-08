@@ -34,8 +34,8 @@ context:
 publisher:
     github:
         type: hyde.ext.publishers.dvcs.Git
-        path: ../fasouto.github.com
-        url: git@github.com:fsouto/fasouto.github.com.git
+        path: ../fsouto.github.com
+        url: git@github.com:fsouto/fsouto.github.com.git
 meta:
     nodemeta: meta.yaml
     created: !!timestamp 2010-01-01 00:00:00
