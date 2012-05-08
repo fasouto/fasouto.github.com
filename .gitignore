@@ -1,0 +1,13 @@
+deploy
+deploy/*
+*.swp
+.hyde_deps
+*~
+*.pyc
+.DS_Store
+*.profile
+*.log
+dist
+build
+*egg*
+*.tar.gz

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>
+        fabiosouto.me feed    </title>
+        <link href="blog/excerpts.xml" rel="self" />
+    
+        <link href="/"/>
+    
+        
+    <updated>2012-04-27T03:57:28Z</updated>
+
+    <id>/blog/excerpts.xml/</id>
+
+            <entry>
+            <title type="html">The ultimate website checklist</title>
+            <author><name>Fabio Souto</name></author>
+            <link href="/blog/website-checklist.html"/>
+            <updated>2011-01-01T10:00:00Z</updated>
+            <published>2011-01-01T10:00:00Z</published>
+            <id>/blog/website-checklist.html</id>
+                        <category   scheme="/blog/tags"
+                        term="webdev"
+                        label="Webdev" />
+            
+            <content type="html">
+                
+                &lt;p&gt;The list of things to look before launch a new&amp;nbsp;website&lt;/p&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">Welcome to CERN</title>
+            <author><name>Fabio Souto</name></author>
+            <link href="/blog/introduction-cern.html"/>
+            <updated>2010-12-01T10:00:00Z</updated>
+            <published>2010-12-01T10:00:00Z</published>
+            <id>/blog/introduction-cern.html</id>
+                        <category   scheme="/blog/tags"
+                        term="CERN"
+                        label="Cern" />
+                        <category   scheme="/blog/tags"
+                        term="work"
+                        label="Work" />
+            
+            <content type="html">
+                &lt;p&gt;&lt;img alt=&#34;A Dark Image&#34; src=&#34;/media/images/dark.png&#34; /&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;span class=&#34;caps&#34;&gt;CERN&lt;/span&gt; is a nice place to work, I will explain how is it from the perspective of an &lt;span class=&#34;caps&#34;&gt;IT&lt;/span&gt;&amp;nbsp;intern.&lt;/p&gt;            </content>
+        </entry>
+    </feed>

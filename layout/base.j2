@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% block starthead %}{% endblock starthead %}
+  <meta charset="{{ resource.meta.charset }}">
+  <meta http-equiv="X-UA-Compatible" content="{{ resource.meta.compatibility }}">
+
+  <title>{% block title %}{{ resource.meta.title }}{% endblock %}</title>
+  <meta name="description" content="{{ resource.meta.description }}">
+  <meta name="author" content="{{ site.meta.author }}">
+
+  <!--  Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="viewport" content="{{ resource.meta.viewport }}">
+
+  {% block favicons %}
+  <!-- Place favicon.ico & apple-touch-icon.png
+        in the root of your domain and delete these references -->
+  <link rel="shortcut icon" href="{{ media_url('images/favicon.ico') }}">
+  <link rel="apple-touch-icon" href="{{ media_url('/apple-touch-icon.png') }}">
+  {% endblock favicons %}
+
+  {% block css %}
+  <link rel="stylesheet" href="{{ media_url('css/bootstrap.min.css') }}">
+  <link rel="stylesheet" href="{{ media_url('css/site.css') }}">
+  {% endblock css %}
+
+  {% block headjs %}
+
+  {% endblock headjs %}
+<link href='http://fonts.googleapis.com/css?family=Exo:400,800' rel='stylesheet' type='text/css'>
+
+
+
+  {% block endhead %}{% endblock endhead %}
+</head>
+<body id="{{ resource.meta.id if resource.meta.id else resource.slug }}">
+  {% block content %}
+  <div class="container">
+      {% block container %}
+          <header class="row main-header">
+          {% block header -%}
+              <div class="span3 logo"><h2><a href="/">FABIO<span class="blue">SOUTO</span></a></h2></div>           
+          {%- endblock %}
+          {% block nav %}
+          {% from "macros.j2" import render_nav with context %}
+            {{ render_nav(menu, 'main_nav') }}
+          {% endblock %}
+          </header>
+
+          <section class="content">
+          {% block main %}
+          {% endblock main %}
+          </section>
+
+    {% endblock container %}
+      <footer>
+<!--       Powered by <a href="http://ringce.com/hyde">hyde</a>.
+ -->      </footer>
+  </div> <!--! end of #container -->
+
+
+  {% endblock content%}
+  {% block js %}
+  <!-- Javascript at the bottom for fast page loading -->
+  {% block jquery %}
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.5.1.min.js">\x3C/script>')</script>
+  {% endblock jquery %}
+
+  {% block scripts %}
+  {% endblock scripts %}
+
+
+  <!--[if lt IE 7 ]>
+    <script src="js/libs/dd_belatedpng.js"></script>
+    <script>DD_belatedPNG.fix('img, .png_bg'); // Fix any <img> or .png_bg bg-images. Also, please read goo.gl/mZiyb </script>
+  <![endif]-->
+
+  {% block analytics %}
+  {% include "analytics.j2" %}
+  {% endblock analytics %}
+
+  {% endblock js %}
+</body>
+</html>
