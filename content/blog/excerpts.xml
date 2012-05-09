@@ -1,6 +1,0 @@
-===
-title: fabiosouto.me feed
-extends: atom.j2
-excerpts_only: true
-listable: false
-===
