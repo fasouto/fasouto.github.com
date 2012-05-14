@@ -1,0 +1,26 @@
+<<<<<<< HEAD
+_site/*
+_theme_packages/*
+
+Thumbs.db
+.DS_Store
+
+!.gitkeep
+
+.rbenv-version
+.rvmrc
+=======
+deploy
+deploy/*
+*.swp
+.hyde_deps
+*~
+*.pyc
+.DS_Store
+*.profile
+*.log
+dist
+build
+*egg*
+*.tar.gz
+>>>>>>> a9a250e8593a94612b0928a7dca7d057898574f2

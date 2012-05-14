@@ -1,6 +1,7 @@
 ---
 layout: post
 category : lessons
+description : "Manual, delete"
 tags : [intro, beginner, jekyll, tutorial]
 ---
 {% include JB/setup %}

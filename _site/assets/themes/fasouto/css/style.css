@@ -1,0 +1,101 @@
+* {
+  font-family:'OFL Sorts Mill Goudy','OFL Sorts Mill Goudy TT',serif;
+  text-rendering:optimizeLegibility;
+}
+
+body {
+  border-top:7px solid #333;
+}
+
+a {
+  color:#F02311;
+}
+
+a:hover {
+  color:#333;
+}
+
+h1 {
+  font-size: 3.5em;
+  line-height: 120%;
+  font-weight:600;
+  letter-spacing: -1px;
+}
+
+h2 {
+  font-size:2.6em;
+  margin-bottom:20px;
+}
+
+h3 {
+  font-size:2em;
+  margin-bottom:14px;
+}
+
+h4 {
+  font-size:1.6em;
+  font-weight: 400;
+}
+
+li {
+  font-size:20px;
+  line-height:25px;
+}
+
+p {
+  font-family:'OFL Sorts Mill Goudy','OFL Sorts Mill Goudy TT',serif;
+  font-size: 1.5em;
+  line-height: 25px;
+  margin-top:12px;
+  margin-bottom:17px;
+}
+
+.main-header {
+  margin-top:4%;
+  margin-bottom:2%;
+}
+
+/* The white background content wrapper */
+.content {
+  padding: 20px;
+  margin: 0 -20px; /* negative indent the amount of the padding to maintain the grid system */
+}
+
+.welcome-message {
+  padding-top:7%;
+}
+
+.logo a {
+    color:#333;
+    text-decoration:none;
+}
+
+.logo a:hover {
+  color:#F02311;
+}
+
+.post-list {
+  text-align:center;
+}
+
+.post-list a{
+  color:#333;
+}
+
+.post-list a:hover{
+  color:#F02311;
+  text-decoration:none !important;
+}
+
+.post {
+  margin-bottom:40px;
+  margin-top:20px;
+}
+
+::selection {
+  background: #fff2a8; /* Safari */
+  }
+
+::-moz-selection {
+  background: #fff2a8; /* Firefox */
+}
