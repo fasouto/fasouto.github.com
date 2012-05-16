@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>New site</title>
+    <meta name="description" content="From Django to Jekyll">
+    <meta name="author" content="Fabio Souto">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="/assets/themes/fasouto/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/themes/fasouto/css/style.css" rel="stylesheet" type="text/css" media="all">
+    <link href='http://fonts.googleapis.com/css?family=OFL+Sorts+Mill+Goudy+TT:regular,italic' rel='stylesheet' type='text/css' />
+
+  </head>
+
+  <body>
+
+
+    <div class="container">
+      
+        <header class="row main-header">
+          <div class="span3 logo"><h3><a href="/">fabio souto</a></h3></div>  
+          <div class="span4 offset5">
+    <nav>
+        <ul class="nav nav-pills nav-menu blog-navigation">
+            <li class=""><a href="/archive.html">articles</a></li>
+            <li class=""><a href="/projects">projects</a></li>
+            <li class=""><a href="/about">about</a></li>
+        </ul>
+    </nav>
+</div>
+        </header>
+
+      <div class="content">
+        
+<div class="page-header">
+  <h1>New site <small>From Django to Jekyll</small></h1>
+</div>
+
+<div class="row">
+  <div class="span8">
+    <p>I had this site a little bit abandoned, so I decided to rewrite it one more time. This time I opted for a simpler design but the biggest change is that I decided to abandon <a href='https://www.djangoproject.com/'>Django</a> and create an static site.</p>
+
+<p>Static sites can be hosted it on github pages, so I can save some MBs in the hosting. It&#8217;s easy to publish new content, just make a commit to the forge. Also this site don&#8217;t need 90% of the functionality offered by Django, I was using a sledgehammer to crack nuts.</p>
+
+<p>But of course I didn&#8217;t create the HTML files from scratch, I use <a href='http://jekyllrb.com/'>Jekyll</a>.</p>
+
+<h3 id='jekyll'>Jekyll?</h3>
+
+<p>Jekyll is a static site generator developed in Ruby. It has support for markdown and integration with github pages. With the help of <a href='http://jekyllbootstrap.com/'>Jekyll bootstrap</a> I was able to create the new version in a couple of hours.</p>
+
+<p>Jekyll it&#8217;s really simple, just run <code>jekyll --serve</code> in your project folder and it will parse the markdown and create the site. The generated site will be in the <code>_site</code> folder. Serve this folder with your static HTTP server (Nginx, Apache&#8230;) and enjoy.</p>
+
+<p><a href='https://github.com/lakshmivyas/hyde'>Hyde</a> is a similar project in Python, and it was my first option. I installed the new version but the documentation is really poor(at the time I&#8217;m writing). Then I decide to install the old version but I found <a href='https://github.com/lakshmivyas/hyde/issues/54'>this bug</a>. I realize I was spending too much time for such a simple task, time to abandon Hyde and embrace Jekyll.</p>
+
+<h3 id='design'>Design</h3>
+
+<p>I&#8217;m not a designer, fortunately I had twitter bootstrap and google fonts to help me to create a readable design. I want to create long articles, so readability it&#8217;s an important point. I try many fonts but one day I discover <a href='http://stevelosh.com/'>Steve Losh</a> site, I shameless copy his font selection.</p>
+
+<h3 id='show_me_the_code'>Show me the code</h3>
+
+<p>The code <a href='https://github.com/fsouto/fsouto.github.com'>is available on Github</a>, feel free to check it and make suggestions.</p>
+    <hr>
+    <div class="pagination">
+      <ul>
+      
+        <li class="prev"><a href="/2012/05/the-ultimate-website-checklist" title="The ultimate website checklist">&larr; The ultimate website checklist</a></li>
+      
+      
+        <li class="next disabled"><a>Next &rarr;</a>
+      
+      </ul>
+    </div>
+    <hr>
+    
+  </div>
+  
+  <div class="span4">
+    <h4>Published</h4>
+    <div class="date"><span>15 May 2012</span></div>
+    <div class="rdbWrapper" data-show-read="1" data-show-send-to-kindle="1" data-show-print="0" data-show-email="0" data-orientation="0" data-version="1" data-bg-color="#fdfdfa"></div><script type="text/javascript">(function() {var s = document.getElementsByTagName("script")[0],rdb = document.createElement("script"); rdb.type = "text/javascript"; rdb.async = true; rdb.src = document.location.protocol + "//www.readability.com/embed.js"; s.parentNode.insertBefore(rdb, s); })();</script></div>
+</div>
+
+
+      </div>
+
+    </div> <!-- /container -->
+
+    
+  </body>
+</html>
+
