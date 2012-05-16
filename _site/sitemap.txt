@@ -9,8 +9,7 @@ http://fsouto.github.com/projects/index.html
 http://fsouto.github.com/sitemap.txt
 http://fsouto.github.com/tags.html
 
+http://fsouto.github.com/2012/05/new-site
 http://fsouto.github.com/2012/05/the-ultimate-website-checklist
 http://fsouto.github.com/2012/05/introduction-to-hadoop
 http://fsouto.github.com/2012/05/django-tips-and-tricks
-http://fsouto.github.com/2012/05/hello-world
-http://fsouto.github.com/2011/12/jekyll-introduction
