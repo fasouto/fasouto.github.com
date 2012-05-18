@@ -9,4 +9,5 @@ http://fsouto.github.com/projects/index.html
 http://fsouto.github.com/sitemap.txt
 http://fsouto.github.com/tags.html
 
+http://fsouto.github.com/2012/05/my-website-prelaunch-checklist
 http://fsouto.github.com/2012/05/new-site

@@ -4,13 +4,147 @@
  <title>Fabio Souto</title>
  <link href="http://fsouto.github.com/atom.xml" rel="self"/>
  <link href="http://fsouto.github.com"/>
- <updated>2012-05-16T16:34:47+02:00</updated>
+ <updated>2012-05-18T17:24:29+02:00</updated>
  <id>http://fsouto.github.com</id>
  <author>
    <name>Fabio Souto</name>
    <email>fsoutomoure@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>My website prelaunch checklist</title>
+   <link href="http://fsouto.github.com/2012/05/my-website-prelaunch-checklist"/>
+   <updated>2012-05-18T00:00:00+02:00</updated>
+   <id>http://fsouto.github.com/2012/05/my-website-prelaunch-checklist</id>
+   <content type="html">&lt;p&gt;This is a document that I&amp;#8217;ve been updating during 3+ years. Obviously It&amp;#8217;s not mandatory to meet all the requirements, I just use it as a reference and it help me to reinforce good practices. Feel free to make suggestions.&lt;/p&gt;
+
+&lt;h3 id='application_testing'&gt;Application testing&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Ensure all test are passing&lt;/li&gt;
+
+&lt;li&gt;Stop verbose error reporting, then check 404 and 500 pages&lt;/li&gt;
+
+&lt;li&gt;Security test&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id='backups'&gt;Backups&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Set &lt;a href='http://www.gfi.com/blog/create-complex-secure-backup-strategy/'&gt;backup strategy&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;Test backups&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id='load_time'&gt;Load time&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Load test (&lt;a href=''&gt;blitz.io&lt;/a&gt;, &lt;a href='http://jmeter.apache.org/'&gt;JMeter&lt;/a&gt;&amp;#8230;)&lt;/li&gt;
+
+&lt;li&gt;Check number of HTTP requests&lt;/li&gt;
+
+&lt;li&gt;Add expires headers&lt;/li&gt;
+
+&lt;li&gt;Put JS at bottom&lt;/li&gt;
+
+&lt;li&gt;Compress/minimize js/css&lt;/li&gt;
+
+&lt;li&gt;Serve gzipped content&lt;/li&gt;
+
+&lt;li&gt;Optimize images&lt;/li&gt;
+
+&lt;li&gt;Caching&lt;/li&gt;
+
+&lt;li&gt;Check indexes in the database&lt;/li&gt;
+
+&lt;li&gt;Use CDN&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id='monitoring'&gt;Monitoring&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Server monitoring (&lt;a href='http://munin-monitoring.org/'&gt;Munin&lt;/a&gt;, &lt;a href='http://www.nagios.org/'&gt;Nagios&lt;/a&gt;&amp;#8230;)&lt;/li&gt;
+
+&lt;li&gt;Setup web analytics&lt;/li&gt;
+
+&lt;li&gt;Setup Feedburner&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id='standards'&gt;Standards&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Accesibility validation&lt;/li&gt;
+
+&lt;li&gt;HTML validation&lt;/li&gt;
+
+&lt;li&gt;JS validation&lt;/li&gt;
+
+&lt;li&gt;CSS validation&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://www.opensearch.org/'&gt;Opensearch&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id='design'&gt;Design&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Adequate text-to-background contrast&lt;/li&gt;
+
+&lt;li&gt;Readability&lt;/li&gt;
+
+&lt;li&gt;Navigation is easy to identify&lt;/li&gt;
+
+&lt;li&gt;Favicon&lt;/li&gt;
+
+&lt;li&gt;Apple icons&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id='accesibility'&gt;Accesibility&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Images with alt text&lt;/li&gt;
+
+&lt;li&gt;Test different resolutions&lt;/li&gt;
+
+&lt;li&gt;Test with Internet explorer&lt;/li&gt;
+
+&lt;li&gt;Test on mobile devices&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id='social'&gt;Social&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Check &lt;a href='http://ogp.me/'&gt;Opengraph&lt;/a&gt; tags&lt;/li&gt;
+
+&lt;li&gt;Add/test social buttons&lt;/li&gt;
+
+&lt;li&gt;Check social button integration with google analytics&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id='seo'&gt;SEO&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Redirect http://www to http://&lt;/li&gt;
+
+&lt;li&gt;Check meta tags&lt;/li&gt;
+
+&lt;li&gt;Add canonical tag to duplicated content&lt;/li&gt;
+
+&lt;li&gt;Sitemap.xml&lt;/li&gt;
+
+&lt;li&gt;Check url structure&lt;/li&gt;
+
+&lt;li&gt;Create a robots.txt&lt;/li&gt;
+
+&lt;li&gt;Page titles with keywords&lt;/li&gt;
+
+&lt;li&gt;Submit to search engines&lt;/li&gt;
+
+&lt;li&gt;Build some backlinks &lt;/li&gt;
+
+&lt;li&gt;Ensure semantical content&lt;/li&gt;
+&lt;/ul&gt;</content>
+ </entry>
  
  <entry>
    <title>New site</title>
