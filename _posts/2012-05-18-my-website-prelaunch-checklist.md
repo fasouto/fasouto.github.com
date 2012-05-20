@@ -8,7 +8,7 @@ tags: []
 {% include JB/setup %}
 
 This is a document that I've been updating during 3+ years. Obviously It's not mandatory to
-meet all the requirements, I just use it as a reference and it help me to reinforce good practices. Feel free to make suggestions.
+meet all the requirements, I just use it as a reference and it helps me to reinforce good practices. Feel free to make suggestions.
 
 
 
@@ -55,13 +55,13 @@ meet all the requirements, I just use it as a reference and it help me to reinfo
 ### Accesibility
 - Images with alt text 
 - Test different resolutions 
-- Test with Internet explorer 
+- Test with Internet Explorer 
 - Test on mobile devices
 
 ### Social 
 - Check [Opengraph](http://ogp.me/) tags 
 - Add/test social buttons 
-- Check social button integration with google analytics
+- Check social button integration with Google analytics
 
 ### SEO 
 - Redirect http://www to http:// 
