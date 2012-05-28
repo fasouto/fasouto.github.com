@@ -4,7 +4,7 @@
  <title>Fabio Souto</title>
  <link href="http://fsouto.github.com/atom.xml" rel="self"/>
  <link href="http://fsouto.github.com"/>
- <updated>2012-05-18T21:39:13+02:00</updated>
+ <updated>2012-05-28T17:15:55+02:00</updated>
  <id>http://fsouto.github.com</id>
  <author>
    <name>Fabio Souto</name>
@@ -106,7 +106,7 @@
 
 &lt;li&gt;Test different resolutions&lt;/li&gt;
 
-&lt;li&gt;Test with Internet explorer&lt;/li&gt;
+&lt;li&gt;Test with Internet Explorer&lt;/li&gt;
 
 &lt;li&gt;Test on mobile devices&lt;/li&gt;
 &lt;/ul&gt;
@@ -118,7 +118,7 @@
 
 &lt;li&gt;Add/test social buttons&lt;/li&gt;
 
-&lt;li&gt;Check social button integration with google analytics&lt;/li&gt;
+&lt;li&gt;Check social button integration with Google analytics&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id='seo'&gt;SEO&lt;/h3&gt;
@@ -151,9 +151,9 @@
    <link href="http://fsouto.github.com/2012/05/new-site"/>
    <updated>2012-05-15T00:00:00+02:00</updated>
    <id>http://fsouto.github.com/2012/05/new-site</id>
-   <content type="html">&lt;p&gt;I had this site a little bit abandoned, so I decided to rewrite it one more time. This time I opted for a simpler design but the biggest change is that I decided to abandon &lt;a href='https://www.djangoproject.com/'&gt;Django&lt;/a&gt; and create an static site.&lt;/p&gt;
+   <content type="html">&lt;p&gt;I had this site a little bit abandoned, so I decided to rewrite it one more time. This time I opted for a simpler design but the biggest change is that I decided to abandon &lt;a href='https://www.djangoproject.com/'&gt;Django&lt;/a&gt; and create a static site.&lt;/p&gt;
 
-&lt;p&gt;Static sites can be hosted it on github pages, so I can save some MBs in the hosting. It&amp;#8217;s easy to publish new content, just make a commit to the forge. Also this site don&amp;#8217;t need 90% of the functionality offered by Django, I was using a sledgehammer to crack nuts.&lt;/p&gt;
+&lt;p&gt;Static sites can be hosted it on github pages, so I can save some MBs in the hosting. It&amp;#8217;s easy to publish new content, just make a commit to the forge. Moreover, this site doesn&amp;#8217;t need 90% of the functionality offered by Django, I was using a sledgehammer to crack nuts.&lt;/p&gt;
 
 &lt;p&gt;But of course I didn&amp;#8217;t create the HTML files from scratch, I use &lt;a href='http://jekyllrb.com/'&gt;Jekyll&lt;/a&gt;.&lt;/p&gt;
 
@@ -161,13 +161,13 @@
 
 &lt;p&gt;Jekyll is a static site generator developed in Ruby. It has support for markdown and integration with github pages. With the help of &lt;a href='http://jekyllbootstrap.com/'&gt;Jekyll bootstrap&lt;/a&gt; I was able to create the new version in a couple of hours.&lt;/p&gt;
 
-&lt;p&gt;Jekyll it&amp;#8217;s really simple, just run &lt;code&gt;jekyll --serve&lt;/code&gt; in your project folder and it will parse the markdown and create the site. The generated site will be in the &lt;code&gt;_site&lt;/code&gt; folder. Serve this folder with your static HTTP server (Nginx, Apache&amp;#8230;) and enjoy.&lt;/p&gt;
+&lt;p&gt;Jekyll is really simple, just run &lt;code&gt;jekyll --serve&lt;/code&gt; in your project folder and it will parse the markdown and create the site. The generated site will be in the &lt;code&gt;_site&lt;/code&gt; folder. Serve this folder with your static HTTP server (Nginx, Apache&amp;#8230;) and enjoy.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href='https://github.com/lakshmivyas/hyde'&gt;Hyde&lt;/a&gt; is a similar project in Python, and it was my first option. I installed the new version but the documentation is really poor(at the time I&amp;#8217;m writing). Then I decide to install the old version but I found &lt;a href='https://github.com/lakshmivyas/hyde/issues/54'&gt;this bug&lt;/a&gt;. I realize I was spending too much time for such a simple task, time to abandon Hyde and embrace Jekyll.&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/lakshmivyas/hyde'&gt;Hyde&lt;/a&gt; is a similar project in Python, and it was my first option. I installed the new version but the documentation is really poor(at the time of writing). I decided to install the old version but I found &lt;a href='https://github.com/lakshmivyas/hyde/issues/54'&gt;this bug&lt;/a&gt;. I realize I was spending too much time for such a simple task. Time to abandon Hyde and embrace Jekyll.&lt;/p&gt;
 
 &lt;h3 id='design'&gt;Design&lt;/h3&gt;
 
-&lt;p&gt;I&amp;#8217;m not a designer, fortunately I had twitter bootstrap and google fonts to help me to create a readable design. I want to create long articles, so readability it&amp;#8217;s an important point. I try many fonts but one day I discover &lt;a href='http://stevelosh.com/'&gt;Steve Losh&lt;/a&gt; site, I shameless copy his font selection.&lt;/p&gt;
+&lt;p&gt;I&amp;#8217;m not a designer but fortunately I had Twitter bootstrap and Google fonts to help me to create a readable design. I want to create long articles, so readability it&amp;#8217;s an important point. I tried many fonts until one day I discovered &lt;a href='http://stevelosh.com/'&gt;Steve Losh&lt;/a&gt; site, I shamelessly copied his font selection.&lt;/p&gt;
 
 &lt;h3 id='show_me_the_code'&gt;Show me the code&lt;/h3&gt;
 
