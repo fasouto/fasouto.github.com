@@ -4,6 +4,7 @@ title: "My website prelaunch checklist"
 description: "Things to check before launch day"
 category: 
 tags: []
+published: false
 ---
 {% include JB/setup %}
 
@@ -35,7 +36,7 @@ meet all the requirements, I just use it as a reference and it helps me to reinf
 
 ### Monitoring
 - Server monitoring ([Munin](http://munin-monitoring.org/), [Nagios](http://www.nagios.org/)...)
-- Setup web analytics 
+- Setup web analytics
 - Setup Feedburner
 
 ### Standards 
@@ -69,7 +70,7 @@ meet all the requirements, I just use it as a reference and it helps me to reinf
 - Add canonical tag to duplicated content
 - Sitemap.xml 
 - Check url structure 
-- Create a robots.txt 
+- Create a robots.txt
 - Page titles with keywords 
 - Submit to search engines 
 - Build some backlinks  
