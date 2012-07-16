@@ -4,7 +4,7 @@ title: "My website prelaunch checklist"
 description: "Things to check before launch day"
 category: 
 tags: []
-published: false
+published: true
 ---
 {% include JB/setup %}
 
