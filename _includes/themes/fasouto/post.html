@@ -3,28 +3,22 @@
 </div>
 
 <div class="row">
-  <div class="span8">
+  <div class="col-md-8">
     {{ content }}
     <hr>
-    <div class="pagination">
-      <ul>
+
+      <ul class="pager">
       {% if page.previous %}
-        <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; {{ page.previous.title }}</a></li>
-      {% else %}
-        <li class="prev disabled"><a>&larr; Previous</a></li>
+        <li class="previous"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; {{ page.previous.title }}</a></li>
       {% endif %}
       {% if page.next %}
         <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">{{ page.next.title }} &rarr;</a></li>
-      {% else %}
-        <li class="next disabled"><a>Next &rarr;</a>
       {% endif %}
       </ul>
     </div>
-    <hr>
     {% include JB/comments %}
-  </div>
   
-  <div class="span4">
+  <div class="col-md-4">
     <h4>Published</h4>
     <div class="date"><span>{{ page.date | date_to_long_string }}</span></div>
     <div class="rdbWrapper" data-show-read="1" data-show-send-to-kindle="1" data-show-print="0" data-show-email="0" data-orientation="0" data-version="1" data-bg-color="#fdfdfa"></div><script type="text/javascript">(function() {var s = document.getElementsByTagName("script")[0],rdb = document.createElement("script"); rdb.type = "text/javascript"; rdb.async = true; rdb.src = document.location.protocol + "//www.readability.com/embed.js"; s.parentNode.insertBefore(rdb, s); })();</script></div>
