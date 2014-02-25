@@ -11,3 +11,4 @@ dist
 build
 *egg*
 *.tar.gz
+serve/
