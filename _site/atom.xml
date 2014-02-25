@@ -4,7 +4,7 @@
  <title>Fabio Souto</title>
  <link href="http://fsouto.github.com/atom.xml" rel="self"/>
  <link href="http://fsouto.github.com"/>
- <updated>2013-10-10T03:37:07+02:00</updated>
+ <updated>2014-02-25T02:02:33+01:00</updated>
  <id>http://fsouto.github.com</id>
  <author>
    <name>Fabio Souto</name>
@@ -13,13 +13,230 @@
 
  
  <entry>
+   <title>Unix tips and tricks</title>
+   <link href="http://fsouto.github.com/2014/02/unix-tips-and-tricks"/>
+   <updated>2014-02-25T00:00:00+01:00</updated>
+   <id>http://fsouto.github.com/2014/02/unix-tips-and-tricks</id>
+   <content type="html">&lt;p&gt;In 1986 &lt;a href=&quot;http://en.wikipedia.org/wiki/Jon_Bentley&quot;&gt;Jon Bentley&lt;/a&gt; asked to &lt;a href=&quot;http://en.wikipedia.org/wiki/Donald_Knuth&quot;&gt;Donald Knuth&lt;/a&gt; to write a program using the literate programming paradigm. This code will be published in a ACM magazine along with a critique by Doug McIlroy.&lt;/p&gt;
+
+&lt;p&gt;The task was this:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Read a file of text, determine the n most frequently used words, and print out a sorted list of those words along with their frequencies.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Knuth wrote his program in WEB, a literate programming system. He wrote a good solution for this task using a custom data structure, but McIlroy published a 6 line shell pipeline that do the same as the Knuth 10+ pages.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+   tr -cs A-Za-z '\n' |
+   tr A-Z a-z |
+   sort |
+   uniq -c |
+   sort -rn |
+   sed ${1}q
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Knuth is an excellent programmer, but McIlroy was able to do it in a more readable, simple way, thanks to the Unix philosophy.&lt;/p&gt;
+
+&lt;p&gt;Unix knowledge can save you a lot of time.&lt;/p&gt;
+
+&lt;h2 id=&quot;master_the_history&quot;&gt;Master the history&lt;/h2&gt;
+
+&lt;p&gt;Using the history efficiently can help to avoid repetitions.&lt;/p&gt;
+
+&lt;p&gt;The &lt;code&gt;history&lt;/code&gt; command show a list of recently run commands with a numeric id. &lt;code&gt;!&amp;lt;number&amp;gt;&lt;/code&gt; will run the associated command in history.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;!!&lt;/code&gt; repeat the latest command, so &lt;code&gt;sudo !!&lt;/code&gt; run the last typed command as root.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;!-N&lt;/code&gt; run the nth most recent command, so &lt;code&gt;!-1&lt;/code&gt; run the most recent command, &lt;code&gt;!-2&lt;/code&gt; the previous one… and so on.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;!&amp;lt;string&amp;gt;&lt;/code&gt; will run the most recent command that start with &amp;lt;string&amp;gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;!&amp;lt;string&amp;gt;?&lt;/code&gt; run the most recent command that contains &amp;lt;string&amp;gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;!*&lt;/code&gt; Running a second command with the same arguments as the previous command, use &lt;code&gt;!*&lt;/code&gt; to repeat all arguments,&lt;code&gt;!$&lt;/code&gt; get the final argument and &lt;code&gt;!^&lt;/code&gt; the first.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;!:N&lt;/code&gt; will get the Nth argument, &lt;code&gt;!:1&lt;/code&gt; get the first, &lt;code&gt;!:3-4&lt;/code&gt; the third and fourth…&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;!:*&lt;/code&gt; get all the arguments without the command.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;$_&lt;/code&gt; will get last argument&lt;/p&gt;
+
+&lt;p&gt;When running commands, sometimes I’ll want to run a command with the previous ones arguments. To do that, you can use this shortcut:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ mkdir /tmp/new
+$ cd !!:*&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And if you make a typo, you can run the previous command replacing foo for bar, like this.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;^foo^bar&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;useful_aliases&quot;&gt;Useful aliases&lt;/h2&gt;
+
+&lt;p&gt;I have more useful aliases on my &lt;a href=&quot;https://github.com/fsouto/dotfiles/blob/master/.aliases&quot;&gt;dotfiles on github&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;prevent_accidents&quot;&gt;Prevent accidents&lt;/h4&gt;
+
+&lt;p&gt;The -i or –interactive argument will ask you to confirm before do any destructive change.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;alias cp='cp -i'&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;alias mv='mv -i'&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;alias rm='rm -i'&lt;/code&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;tar_and_untar&quot;&gt;Tar and untar&lt;/h4&gt;
+
+&lt;p&gt;I never remember how to tar/untar, luckily I have this in my aliases&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;alias mkgz=&amp;quot;tar -cvzf&amp;quot;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;alias untar=&amp;quot;tar -xvzf&amp;quot;&lt;/code&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;macosx&quot;&gt;MacOSX&lt;/h4&gt;
+
+&lt;p&gt;To flush the DNS cache:&lt;/p&gt;
+
+&lt;p&gt;Snow Leopard: &lt;code&gt;alias flush=&amp;quot;dscacheutil -flushcache&amp;quot;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Lion or Mountain Lion: &lt;code&gt;alias flush=&amp;quot;sudo killall -HUP mDNSResponder&amp;quot;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;To open a file in quicklook:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;alias ql=&amp;quot;qlmanage -p 2&amp;gt;/dev/null &amp;quot;&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;readline&quot;&gt;Readline&lt;/h2&gt;
+
+&lt;p&gt;To move along the text is important to be confortable with readline. I printed &lt;a href=&quot;http://www.bigsmoke.us/readline/shortcuts&quot;&gt;this realine cheatsheet&lt;/a&gt; and have it near my computer:&lt;/p&gt;
+
+&lt;h5 id=&quot;the_basics&quot;&gt;The basics&lt;/h5&gt;
+
+&lt;p&gt;&lt;code&gt;Crtl + a&lt;/code&gt; move the cursor to the start of the line&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;Crtl + e&lt;/code&gt; move the cursor to the start of the line&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;Crtl + r&lt;/code&gt; to search previous typed commands&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;Crtl + g&lt;/code&gt; to abort an incremental search an go back to the line&lt;/p&gt;
+
+&lt;h2 id=&quot;python_tricks&quot;&gt;Python tricks&lt;/h2&gt;
+
+&lt;h4 id=&quot;pretty_print_json&quot;&gt;Pretty print JSON&lt;/h4&gt;
+
+&lt;p&gt;Sometimes you need to print a json file on a readable form:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;cat file.json | python -mjson.tool&lt;/code&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;run_a_web_or_mail_server&quot;&gt;Run a web or mail server&lt;/h4&gt;
+
+&lt;p&gt;Serves the current directory in HOSTNAME:8000 or HOSTNAME:port&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;python -m SimpleHTTPServer [port]&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Now imagine this scenario: you want to test an application that send emails, but you are too lazy to install and configure an email server. With this command all the emails received will be printed to the stardart output.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;python -m smtpd -n -c DebuggingServer localhost:25&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Both examples demonstrate the usefulness of &lt;code&gt;if __name__ == '__main__'&lt;/code&gt;. In both cases the modules can be consumed as a library and as a command-line script at the same time.&lt;/p&gt;
+
+&lt;h2 id=&quot;use_rsync&quot;&gt;Use Rsync&lt;/h2&gt;
+
+&lt;p&gt;I used to upload files to my servers using ftp or scp until I discovered rsync(remote sync). Rsync copies the diffs of files that have changed, compressed and using ssh. With rsync it’s trivial to synchronize a lot of directories between servers, to do this I just need to type:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;rsync -avz /var/dir/ user@server:/var/&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;misc&quot;&gt;Misc&lt;/h2&gt;
+
+&lt;h4 id=&quot;job_control_with_disown&quot;&gt;Job control with disown&lt;/h4&gt;
+
+&lt;p&gt;This command is incredibly useful, sometimes you forgot to start a time consuming command with nohup or screen and you need to go offline while the command is still running. You can pause it with &lt;code&gt;crtl-z&lt;/code&gt; move it to the background with &lt;code&gt;bg&lt;/code&gt;and then protect it from SIGHUP using &lt;code&gt;disown&lt;/code&gt;, so you can quit your ssh session.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;disown jobID&lt;/code&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;make_a_directory_tree_quicker&quot;&gt;Make a directory tree quicker&lt;/h4&gt;
+
+&lt;p&gt;Usually I create a directory tree one at a time:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ mkdir tmp
+$ cd tmp
+$ mkdir foo
+$ cd foo
+$ mkdir bar
+…&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;But it’s faster to use the -p option of mkdir. So instead of this I just need to type:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;$ mkdir -p tmp/foo/bar&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;You can use -p to create more complicated directory trees, like:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;$ mkdir -p my_project/{foo/tests,bar,settings/{dev,staging,prod},alice/bob/whatever}&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;this creates the following tree:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ tree
+.
+└── my_project
+	├── alice
+	│   └── bob
+	│  	 └── whatever
+	├── bar
+	├── foo
+	│   └── tests
+	└── settings
+		├── dev
+		├── prod
+		└── staging&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&quot;move_a_file_without_type_the_name_twice&quot;&gt;Move a file without type the name twice&lt;/h4&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.shell-fu.org/lister.php?id=46&quot;&gt;From shell-fu&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;cp ReallyLongFileNameYouDontWantToTypeTwice{,.orig}&lt;/code&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;return_to_the_previous_directory&quot;&gt;Return to the previous directory&lt;/h4&gt;
+
+&lt;p&gt;Sometimes you are required to hop between two directories, in those cases you can use &lt;code&gt; cd - &lt;/code&gt; to return to the previous directory.&lt;/p&gt;
+
+&lt;h4 id=&quot;quickly_empty_a_file&quot;&gt;Quickly empty a file&lt;/h4&gt;
+
+&lt;p&gt;&lt;code&gt; &amp;gt;file &lt;/code&gt; empty a file&lt;/p&gt;
+
+&lt;h4 id=&quot;typing_long_or_tricky_commands&quot;&gt;Typing long or tricky commands&lt;/h4&gt;
+
+&lt;p&gt;&lt;code&gt; fc &lt;/code&gt; Open an text editor to write your command&lt;/p&gt;
+
+&lt;h4 id=&quot;get_your_external_ip&quot;&gt;Get your external IP&lt;/h4&gt;
+
+&lt;p&gt;&lt;code&gt; curl ifconfig.me &lt;/code&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;show_ascii_table&quot;&gt;Show ascii table&lt;/h4&gt;
+
+&lt;p&gt;&lt;code&gt;man ascii&lt;/code&gt; quickly access the table of ascii characters&lt;/p&gt;
+
+&lt;h4 id=&quot;make_your_terminal_talk_osx_only&quot;&gt;Make your terminal talk (OSX only)&lt;/h4&gt;
+
+&lt;p&gt;From &lt;a href=&quot;http://xkcd.com/530/&quot;&gt;http://xkcd.com/530/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;say &amp;quot;hey im locked out downstairs&amp;quot;&lt;/code&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;ascii_art_username&quot;&gt;ASCII art username&lt;/h4&gt;
+
+&lt;p&gt;&lt;code&gt;banner $USER&lt;/code&gt; Ok, maybe not the most useful command…&lt;/p&gt;
+
+&lt;h4 id=&quot;ascii_movie&quot;&gt;ASCII movie&lt;/h4&gt;
+
+&lt;p&gt;&lt;code&gt;telnet towel.blinkenlights.nl&lt;/code&gt; Pop some popcorn and enjoy the show :)&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
    <title>My website prelaunch checklist</title>
    <link href="http://fsouto.github.com/2012/05/my-website-prelaunch-checklist"/>
    <updated>2012-05-18T00:00:00+02:00</updated>
    <id>http://fsouto.github.com/2012/05/my-website-prelaunch-checklist</id>
-   <content type="html">&lt;p&gt;This is a document that I&amp;#8217;ve been updating during 3+ years. Obviously It&amp;#8217;s not mandatory to meet all the requirements, I just use it as a reference and it helps me to reinforce good practices. Feel free to make suggestions.&lt;/p&gt;
+   <content type="html">&lt;p&gt;This is a document that I’ve been updating during 3+ years. Obviously It’s not mandatory to meet all the requirements, I just use it as a reference and it helps me to reinforce good practices. Feel free to make suggestions.&lt;/p&gt;
 
-&lt;h3 id='application_testing'&gt;Application testing&lt;/h3&gt;
+&lt;h3 id=&quot;application_testing&quot;&gt;Application testing&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Ensure all test are passing&lt;/li&gt;
@@ -29,18 +246,18 @@
 &lt;li&gt;Security test&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id='backups'&gt;Backups&lt;/h3&gt;
+&lt;h3 id=&quot;backups&quot;&gt;Backups&lt;/h3&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Set &lt;a href='http://www.gfi.com/blog/create-complex-secure-backup-strategy/'&gt;backup strategy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Set &lt;a href=&quot;http://www.gfi.com/blog/create-complex-secure-backup-strategy/&quot;&gt;backup strategy&lt;/a&gt;&lt;/li&gt;
 
 &lt;li&gt;Test backups&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id='load_time'&gt;Load time&lt;/h3&gt;
+&lt;h3 id=&quot;load_time&quot;&gt;Load time&lt;/h3&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Load test (&lt;a href=''&gt;blitz.io&lt;/a&gt;, &lt;a href='http://jmeter.apache.org/'&gt;JMeter&lt;/a&gt;&amp;#8230;)&lt;/li&gt;
+&lt;li&gt;Load test (&lt;a href=&quot;&quot;&gt;blitz.io&lt;/a&gt;, &lt;a href=&quot;http://jmeter.apache.org/&quot;&gt;JMeter&lt;/a&gt;…)&lt;/li&gt;
 
 &lt;li&gt;Check number of HTTP requests&lt;/li&gt;
 
@@ -61,17 +278,17 @@
 &lt;li&gt;Use CDN&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id='monitoring'&gt;Monitoring&lt;/h3&gt;
+&lt;h3 id=&quot;monitoring&quot;&gt;Monitoring&lt;/h3&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Server monitoring (&lt;a href='http://munin-monitoring.org/'&gt;Munin&lt;/a&gt;, &lt;a href='http://www.nagios.org/'&gt;Nagios&lt;/a&gt;&amp;#8230;)&lt;/li&gt;
+&lt;li&gt;Server monitoring (&lt;a href=&quot;http://munin-monitoring.org/&quot;&gt;Munin&lt;/a&gt;, &lt;a href=&quot;http://www.nagios.org/&quot;&gt;Nagios&lt;/a&gt;…)&lt;/li&gt;
 
 &lt;li&gt;Setup web analytics&lt;/li&gt;
 
 &lt;li&gt;Setup Feedburner&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id='standards'&gt;Standards&lt;/h3&gt;
+&lt;h3 id=&quot;standards&quot;&gt;Standards&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Accesibility validation&lt;/li&gt;
@@ -82,10 +299,10 @@
 
 &lt;li&gt;CSS validation&lt;/li&gt;
 
-&lt;li&gt;&lt;a href='http://www.opensearch.org/'&gt;Opensearch&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.opensearch.org/&quot;&gt;Opensearch&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id='design'&gt;Design&lt;/h3&gt;
+&lt;h3 id=&quot;design&quot;&gt;Design&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Adequate text-to-background contrast&lt;/li&gt;
@@ -99,7 +316,7 @@
 &lt;li&gt;Apple icons&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id='accesibility'&gt;Accesibility&lt;/h3&gt;
+&lt;h3 id=&quot;accesibility&quot;&gt;Accesibility&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Images with alt text&lt;/li&gt;
@@ -111,17 +328,17 @@
 &lt;li&gt;Test on mobile devices&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id='social'&gt;Social&lt;/h3&gt;
+&lt;h3 id=&quot;social&quot;&gt;Social&lt;/h3&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Check &lt;a href='http://ogp.me/'&gt;Opengraph&lt;/a&gt; tags&lt;/li&gt;
+&lt;li&gt;Check &lt;a href=&quot;http://ogp.me/&quot;&gt;Opengraph&lt;/a&gt; tags&lt;/li&gt;
 
 &lt;li&gt;Add/test social buttons&lt;/li&gt;
 
 &lt;li&gt;Check social button integration with Google analytics&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id='seo'&gt;SEO&lt;/h3&gt;
+&lt;h3 id=&quot;seo&quot;&gt;SEO&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Redirect http://www to http://&lt;/li&gt;
@@ -151,27 +368,27 @@
    <link href="http://fsouto.github.com/2012/05/new-site"/>
    <updated>2012-05-15T00:00:00+02:00</updated>
    <id>http://fsouto.github.com/2012/05/new-site</id>
-   <content type="html">&lt;p&gt;I had this site a little bit abandoned, so I decided to rewrite it one more time. This time I opted for a simpler design but the biggest change is that I decided to abandon &lt;a href='https://www.djangoproject.com/'&gt;Django&lt;/a&gt; and create a static site.&lt;/p&gt;
+   <content type="html">&lt;p&gt;I had this site a little bit abandoned, so I decided to rewrite it one more time. This time I opted for a simpler design but the biggest change is that I decided to abandon &lt;a href=&quot;https://www.djangoproject.com/&quot;&gt;Django&lt;/a&gt; and create a static site.&lt;/p&gt;
 
-&lt;p&gt;Static sites can be hosted it on github pages, so I can save some MBs in the hosting. It&amp;#8217;s easy to publish new content, just make a commit to the forge. Moreover, this site doesn&amp;#8217;t need 90% of the functionality offered by Django, I was using a sledgehammer to crack nuts.&lt;/p&gt;
+&lt;p&gt;Static sites can be hosted it on github pages, so I can save some MBs in the hosting. It’s easy to publish new content, just make a commit to the forge. Moreover, this site doesn’t need 90% of the functionality offered by Django, I was using a sledgehammer to crack nuts.&lt;/p&gt;
 
-&lt;p&gt;But of course I didn&amp;#8217;t create the HTML files from scratch, I use &lt;a href='http://jekyllrb.com/'&gt;Jekyll&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;But of course I didn’t create the HTML files from scratch, I use &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h3 id='jekyll'&gt;Jekyll?&lt;/h3&gt;
+&lt;h3 id=&quot;jekyll&quot;&gt;Jekyll?&lt;/h3&gt;
 
-&lt;p&gt;Jekyll is a static site generator developed in Ruby. It has support for markdown and integration with github pages. With the help of &lt;a href='http://jekyllbootstrap.com/'&gt;Jekyll bootstrap&lt;/a&gt; I was able to create the new version in a couple of hours.&lt;/p&gt;
+&lt;p&gt;Jekyll is a static site generator developed in Ruby. It has support for markdown and integration with github pages. With the help of &lt;a href=&quot;http://jekyllbootstrap.com/&quot;&gt;Jekyll bootstrap&lt;/a&gt; I was able to create the new version in a couple of hours.&lt;/p&gt;
 
-&lt;p&gt;Jekyll is really simple, just run &lt;code&gt;jekyll --serve&lt;/code&gt; in your project folder and it will parse the markdown and create the site. The generated site will be in the &lt;code&gt;_site&lt;/code&gt; folder. Serve this folder with your static HTTP server (Nginx, Apache&amp;#8230;) and enjoy.&lt;/p&gt;
+&lt;p&gt;Jekyll is really simple, just run &lt;code&gt;jekyll --serve&lt;/code&gt; in your project folder and it will parse the markdown and create the site. The generated site will be in the &lt;code&gt;_site&lt;/code&gt; folder. Serve this folder with your static HTTP server (Nginx, Apache…) and enjoy.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href='https://github.com/lakshmivyas/hyde'&gt;Hyde&lt;/a&gt; is a similar project in Python, and it was my first option. I installed the new version but the documentation is really poor(at the time of writing). I decided to install the old version but I found &lt;a href='https://github.com/lakshmivyas/hyde/issues/54'&gt;this bug&lt;/a&gt;. I realize I was spending too much time for such a simple task. Time to abandon Hyde and embrace Jekyll.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/lakshmivyas/hyde&quot;&gt;Hyde&lt;/a&gt; is a similar project in Python, and it was my first option. I installed the new version but the documentation is really poor(at the time of writing). I decided to install the old version but I found &lt;a href=&quot;https://github.com/lakshmivyas/hyde/issues/54&quot;&gt;this bug&lt;/a&gt;. I realize I was spending too much time for such a simple task. Time to abandon Hyde and embrace Jekyll.&lt;/p&gt;
 
-&lt;h3 id='design'&gt;Design&lt;/h3&gt;
+&lt;h3 id=&quot;design&quot;&gt;Design&lt;/h3&gt;
 
-&lt;p&gt;I&amp;#8217;m not a designer but fortunately I had Twitter bootstrap and Google fonts to help me to create a readable design. I want to create long articles, so readability it&amp;#8217;s an important point. I tried many fonts until one day I discovered &lt;a href='http://stevelosh.com/'&gt;Steve Losh&lt;/a&gt; site, I shamelessly copied his font selection.&lt;/p&gt;
+&lt;p&gt;I’m not a designer but fortunately I had Twitter bootstrap and Google fonts to help me to create a readable design. I want to create long articles, so readability it’s an important point. I tried many fonts until one day I discovered &lt;a href=&quot;http://stevelosh.com/&quot;&gt;Steve Losh&lt;/a&gt; site, I shamelessly copied his font selection.&lt;/p&gt;
 
-&lt;h3 id='show_me_the_code'&gt;Show me the code&lt;/h3&gt;
+&lt;h3 id=&quot;show_me_the_code&quot;&gt;Show me the code&lt;/h3&gt;
 
-&lt;p&gt;The code &lt;a href='https://github.com/fsouto/fsouto.github.com'&gt;is available on Github&lt;/a&gt;, feel free to check it and make suggestions.&lt;/p&gt;</content>
+&lt;p&gt;The code &lt;a href=&quot;https://github.com/fsouto/fsouto.github.com&quot;&gt;is available on Github&lt;/a&gt;, feel free to check it and make suggestions.&lt;/p&gt;</content>
  </entry>
  
  

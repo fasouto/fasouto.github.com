@@ -47,8 +47,10 @@ h3 {
 }
 
 h4 {
+  font-family:'OFL Sorts Mill Goudy','OFL Sorts Mill Goudy TT',serif;
   font-size:1.6em;
-  font-weight: 400;
+  font-weight: 600;
+  padding-top: 15px;
 }
 
 li {
@@ -62,6 +64,10 @@ p {
   line-height: 25px;
   margin-top:12px;
   margin-bottom:17px;
+}
+
+code {
+  font-size: 0.7em;
 }
 
 .main-header {

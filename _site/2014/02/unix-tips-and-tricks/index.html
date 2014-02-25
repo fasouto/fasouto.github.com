@@ -1,0 +1,294 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Fabio Souto">
+    <meta name="description" content="Master the command line">
+
+    <title>Unix tips and tricks</title>
+
+    <link href="/assets/themes/fasouto/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/themes/fasouto/css/style.css" rel="stylesheet" type="text/css" media="all">
+    <link href='http://fonts.googleapis.com/css?family=OFL+Sorts+Mill+Goudy+TT:regular,italic' rel='stylesheet' type='text/css' />
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container">      
+        <div class="main-header">
+            <ul class="nav nav-pills pull-right">
+    <li class=""><a href="/archive.html">articles</a></li>
+    <li class=""><a href="/projects">projects</a></li>
+    <li class=""><a href="/about">about</a></li>
+</ul>
+
+            <h1 class="logo"><a href="/">fabio souto</a></h1>
+        </div>
+
+      <div class="content">
+        <div class="clearfix"></div>
+        
+<div class="page-header">
+  <h1>Unix tips and tricks <small>Master the command line</small></h1>
+</div>
+
+<div class="row">
+  <div class="col-md-8">
+    <p>In 1986 <a href="http://en.wikipedia.org/wiki/Jon_Bentley">Jon Bentley</a> asked to <a href="http://en.wikipedia.org/wiki/Donald_Knuth">Donald Knuth</a> to write a program using the literate programming paradigm. This code will be published in a ACM magazine along with a critique by Doug McIlroy.</p>
+
+<p>The task was this:</p>
+
+<blockquote>
+<p>Read a file of text, determine the n most frequently used words, and print out a sorted list of those words along with their frequencies.</p>
+</blockquote>
+
+<p>Knuth wrote his program in WEB, a literate programming system. He wrote a good solution for this task using a custom data structure, but McIlroy published a 6 line shell pipeline that do the same as the Knuth 10+ pages.</p>
+
+<p><code>
+   tr -cs A-Za-z '\n' |
+   tr A-Z a-z |
+   sort |
+   uniq -c |
+   sort -rn |
+   sed ${1}q
+</code></p>
+
+<p>Knuth is an excellent programmer, but McIlroy was able to do it in a more readable, simple way, thanks to the Unix philosophy.</p>
+
+<p>Unix knowledge can save you a lot of time.</p>
+
+<h2 id="master_the_history">Master the history</h2>
+
+<p>Using the history efficiently can help to avoid repetitions.</p>
+
+<p>The <code>history</code> command show a list of recently run commands with a numeric id. <code>!&lt;number&gt;</code> will run the associated command in history.</p>
+
+<p><code>!!</code> repeat the latest command, so <code>sudo !!</code> run the last typed command as root.</p>
+
+<p><code>!-N</code> run the nth most recent command, so <code>!-1</code> run the most recent command, <code>!-2</code> the previous one… and so on.</p>
+
+<p><code>!&lt;string&gt;</code> will run the most recent command that start with &lt;string&gt;</p>
+
+<p><code>!&lt;string&gt;?</code> run the most recent command that contains &lt;string&gt;</p>
+
+<p><code>!*</code> Running a second command with the same arguments as the previous command, use <code>!*</code> to repeat all arguments,<code>!$</code> get the final argument and <code>!^</code> the first.</p>
+
+<p><code>!:N</code> will get the Nth argument, <code>!:1</code> get the first, <code>!:3-4</code> the third and fourth…</p>
+
+<p><code>!:*</code> get all the arguments without the command.</p>
+
+<p><code>$_</code> will get last argument</p>
+
+<p>When running commands, sometimes I’ll want to run a command with the previous ones arguments. To do that, you can use this shortcut:</p>
+
+<pre><code>$ mkdir /tmp/new
+$ cd !!:*</code></pre>
+
+<p>And if you make a typo, you can run the previous command replacing foo for bar, like this.</p>
+
+<p><code>^foo^bar</code></p>
+
+<h2 id="useful_aliases">Useful aliases</h2>
+
+<p>I have more useful aliases on my <a href="https://github.com/fsouto/dotfiles/blob/master/.aliases">dotfiles on github</a></p>
+
+<h4 id="prevent_accidents">Prevent accidents</h4>
+
+<p>The -i or –interactive argument will ask you to confirm before do any destructive change.</p>
+
+<p><code>alias cp='cp -i'</code></p>
+
+<p><code>alias mv='mv -i'</code></p>
+
+<p><code>alias rm='rm -i'</code></p>
+
+<h4 id="tar_and_untar">Tar and untar</h4>
+
+<p>I never remember how to tar/untar, luckily I have this in my aliases</p>
+
+<p><code>alias mkgz=&quot;tar -cvzf&quot;</code></p>
+
+<p><code>alias untar=&quot;tar -xvzf&quot;</code></p>
+
+<h4 id="macosx">MacOSX</h4>
+
+<p>To flush the DNS cache:</p>
+
+<p>Snow Leopard: <code>alias flush=&quot;dscacheutil -flushcache&quot;</code></p>
+
+<p>Lion or Mountain Lion: <code>alias flush=&quot;sudo killall -HUP mDNSResponder&quot;</code></p>
+
+<p>To open a file in quicklook:</p>
+
+<p><code>alias ql=&quot;qlmanage -p 2&gt;/dev/null &quot;</code></p>
+
+<h2 id="readline">Readline</h2>
+
+<p>To move along the text is important to be confortable with readline. I printed <a href="http://www.bigsmoke.us/readline/shortcuts">this realine cheatsheet</a> and have it near my computer:</p>
+
+<h5 id="the_basics">The basics</h5>
+
+<p><code>Crtl + a</code> move the cursor to the start of the line</p>
+
+<p><code>Crtl + e</code> move the cursor to the start of the line</p>
+
+<p><code>Crtl + r</code> to search previous typed commands</p>
+
+<p><code>Crtl + g</code> to abort an incremental search an go back to the line</p>
+
+<h2 id="python_tricks">Python tricks</h2>
+
+<h4 id="pretty_print_json">Pretty print JSON</h4>
+
+<p>Sometimes you need to print a json file on a readable form:</p>
+
+<p><code>cat file.json | python -mjson.tool</code></p>
+
+<h4 id="run_a_web_or_mail_server">Run a web or mail server</h4>
+
+<p>Serves the current directory in HOSTNAME:8000 or HOSTNAME:port</p>
+
+<p><code>python -m SimpleHTTPServer [port]</code></p>
+
+<p>Now imagine this scenario: you want to test an application that send emails, but you are too lazy to install and configure an email server. With this command all the emails received will be printed to the stardart output.</p>
+
+<p><code>python -m smtpd -n -c DebuggingServer localhost:25</code></p>
+
+<p>Both examples demonstrate the usefulness of <code>if __name__ == '__main__'</code>. In both cases the modules can be consumed as a library and as a command-line script at the same time.</p>
+
+<h2 id="use_rsync">Use Rsync</h2>
+
+<p>I used to upload files to my servers using ftp or scp until I discovered rsync(remote sync). Rsync copies the diffs of files that have changed, compressed and using ssh. With rsync it’s trivial to synchronize a lot of directories between servers, to do this I just need to type:</p>
+
+<p><code>rsync -avz /var/dir/ user@server:/var/</code></p>
+
+<h2 id="misc">Misc</h2>
+
+<h4 id="job_control_with_disown">Job control with disown</h4>
+
+<p>This command is incredibly useful, sometimes you forgot to start a time consuming command with nohup or screen and you need to go offline while the command is still running. You can pause it with <code>crtl-z</code> move it to the background with <code>bg</code>and then protect it from SIGHUP using <code>disown</code>, so you can quit your ssh session.</p>
+
+<p><code>disown jobID</code></p>
+
+<h4 id="make_a_directory_tree_quicker">Make a directory tree quicker</h4>
+
+<p>Usually I create a directory tree one at a time:</p>
+
+<pre><code>$ mkdir tmp
+$ cd tmp
+$ mkdir foo
+$ cd foo
+$ mkdir bar
+…</code></pre>
+
+<p>But it’s faster to use the -p option of mkdir. So instead of this I just need to type:</p>
+
+<p><code>$ mkdir -p tmp/foo/bar</code></p>
+
+<p>You can use -p to create more complicated directory trees, like:</p>
+
+<p><code>$ mkdir -p my_project/{foo/tests,bar,settings/{dev,staging,prod},alice/bob/whatever}</code></p>
+
+<p>this creates the following tree:</p>
+
+<pre><code>$ tree
+.
+└── my_project
+	├── alice
+	│   └── bob
+	│  	 └── whatever
+	├── bar
+	├── foo
+	│   └── tests
+	└── settings
+		├── dev
+		├── prod
+		└── staging</code></pre>
+
+<h4 id="move_a_file_without_type_the_name_twice">Move a file without type the name twice</h4>
+
+<p><a href="http://www.shell-fu.org/lister.php?id=46">From shell-fu</a></p>
+
+<p><code>cp ReallyLongFileNameYouDontWantToTypeTwice{,.orig}</code></p>
+
+<h4 id="return_to_the_previous_directory">Return to the previous directory</h4>
+
+<p>Sometimes you are required to hop between two directories, in those cases you can use <code> cd - </code> to return to the previous directory.</p>
+
+<h4 id="quickly_empty_a_file">Quickly empty a file</h4>
+
+<p><code> &gt;file </code> empty a file</p>
+
+<h4 id="typing_long_or_tricky_commands">Typing long or tricky commands</h4>
+
+<p><code> fc </code> Open an text editor to write your command</p>
+
+<h4 id="get_your_external_ip">Get your external IP</h4>
+
+<p><code> curl ifconfig.me </code></p>
+
+<h4 id="show_ascii_table">Show ascii table</h4>
+
+<p><code>man ascii</code> quickly access the table of ascii characters</p>
+
+<h4 id="make_your_terminal_talk_osx_only">Make your terminal talk (OSX only)</h4>
+
+<p>From <a href="http://xkcd.com/530/">http://xkcd.com/530/</a></p>
+
+<p><code>say &quot;hey im locked out downstairs&quot;</code></p>
+
+<h4 id="ascii_art_username">ASCII art username</h4>
+
+<p><code>banner $USER</code> Ok, maybe not the most useful command…</p>
+
+<h4 id="ascii_movie">ASCII movie</h4>
+
+<p><code>telnet towel.blinkenlights.nl</code> Pop some popcorn and enjoy the show :)</p>
+    <hr>
+
+      <ul class="pager">
+      
+        <li class="previous"><a href="/2012/05/my-website-prelaunch-checklist" title="My website prelaunch checklist">&larr; My website prelaunch checklist</a></li>
+      
+      
+      </ul>
+    </div>
+    
+  
+  <div class="col-md-4">
+    <h4>Published</h4>
+    <div class="date"><span>25 February 2014</span></div>
+    <div class="rdbWrapper" data-show-read="1" data-show-send-to-kindle="1" data-show-print="0" data-show-email="0" data-orientation="0" data-version="1" data-bg-color="#fdfdfa"></div><script type="text/javascript">(function() {var s = document.getElementsByTagName("script")[0],rdb = document.createElement("script"); rdb.type = "text/javascript"; rdb.async = true; rdb.src = document.location.protocol + "//www.readability.com/embed.js"; s.parentNode.insertBefore(rdb, s); })();</script></div>
+</div>
+
+
+      </div>
+
+    </div> <!-- /container -->
+
+    
+
+    <!-- IDL code -->
+    <script type="text/javascript">
+        window._idl = {};
+        _idl.variant = "banner";
+        (function() {
+            var idl = document.createElement('script');
+            idl.type = 'text/javascript';
+            idl.async = true;
+            idl.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'members.internetdefenseleague.org/include/?url=' + (_idl.url || '') + '&campaign=' + (_idl.campaign || '') + '&variant=' + (_idl.variant || 'banner');
+            document.getElementsByTagName('body')[0].appendChild(idl);
+        })();
+    </script>
+    
+  </body>
+</html>
+

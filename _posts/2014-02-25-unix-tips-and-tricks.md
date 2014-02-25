@@ -39,9 +39,9 @@ The `history` command show a list of recently run commands with a numeric id.
 
 `!-N` run the nth most recent command, so `!-1` run the most recent command, `!-2` the previous one… and so on.
 
-`!<string>` will run the most recent command that start with \<string>
+`!<string>` will run the most recent command that start with &lt;string>
 
-`!?<string>?` run the most recent command that contains \<string>
+`!<string>?` run the most recent command that contains &lt;string>
 
 `!*` Running a second command with the same arguments as the previous command, use `!*` to repeat all arguments,`!$` get the final argument and `!^` the first.
 
@@ -214,6 +214,7 @@ Sometimes you are required to hop between two directories, in those cases you ca
 #### Show ascii table
 
 `man ascii` quickly access the table of ascii characters
+
 
 #### Make your terminal talk (OSX only)
 
