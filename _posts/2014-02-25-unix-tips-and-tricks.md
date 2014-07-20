@@ -188,9 +188,7 @@ this creates the following tree:
 
 #### Move a file without type the name twice
 
-[From shell-fu](http://www.shell-fu.org/lister.php?id=46)
-
-`cp ReallyLongFileNameYouDontWantToTypeTwice{,.orig}`
+`cp ReallyLongFileNameYouDontWantToTypeTwice{,.orig}` ([from shell-fu](http://www.shell-fu.org/lister.php?id=46))
 
 
 #### Return to the previous directory
@@ -204,7 +202,7 @@ Sometimes you are required to hop between two directories, in those cases you ca
 
 #### Typing long or tricky commands
 
-` fc ` Open an text editor to write your command
+` fc ` open an text editor to write your command
 
 #### Get your external IP
 
@@ -218,13 +216,11 @@ Sometimes you are required to hop between two directories, in those cases you ca
 
 #### Make your terminal talk (OSX only)
 
-From [http://xkcd.com/530/](http://xkcd.com/530/)
-
-`say "hey im locked out downstairs"`
+`say "hey im locked out downstairs"` (extracted from [http://xkcd.com/530/](http://xkcd.com/530/))
 
 #### ASCII art username
 
-`banner $USER` Ok, maybe not the most useful command…
+`banner $USER` maybe not the most useful command… :)
 
 #### ASCII movie
-`telnet towel.blinkenlights.nl` Pop some popcorn and enjoy the show :)
+`telnet towel.blinkenlights.nl` pop some popcorn and enjoy the show

@@ -4,7 +4,7 @@
  <title>Fabio Souto</title>
  <link href="http://fsouto.github.com/atom.xml" rel="self"/>
  <link href="http://fsouto.github.com"/>
- <updated>2014-02-25T02:02:33+01:00</updated>
+ <updated>2014-07-20T19:21:31+02:00</updated>
  <id>http://fsouto.github.com</id>
  <author>
    <name>Fabio Souto</name>
@@ -190,9 +190,7 @@ $ mkdir bar
 
 &lt;h4 id=&quot;move_a_file_without_type_the_name_twice&quot;&gt;Move a file without type the name twice&lt;/h4&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://www.shell-fu.org/lister.php?id=46&quot;&gt;From shell-fu&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;cp ReallyLongFileNameYouDontWantToTypeTwice{,.orig}&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;cp ReallyLongFileNameYouDontWantToTypeTwice{,.orig}&lt;/code&gt; (&lt;a href=&quot;http://www.shell-fu.org/lister.php?id=46&quot;&gt;from shell-fu&lt;/a&gt;)&lt;/p&gt;
 
 &lt;h4 id=&quot;return_to_the_previous_directory&quot;&gt;Return to the previous directory&lt;/h4&gt;
 
@@ -204,7 +202,7 @@ $ mkdir bar
 
 &lt;h4 id=&quot;typing_long_or_tricky_commands&quot;&gt;Typing long or tricky commands&lt;/h4&gt;
 
-&lt;p&gt;&lt;code&gt; fc &lt;/code&gt; Open an text editor to write your command&lt;/p&gt;
+&lt;p&gt;&lt;code&gt; fc &lt;/code&gt; open an text editor to write your command&lt;/p&gt;
 
 &lt;h4 id=&quot;get_your_external_ip&quot;&gt;Get your external IP&lt;/h4&gt;
 
@@ -216,17 +214,15 @@ $ mkdir bar
 
 &lt;h4 id=&quot;make_your_terminal_talk_osx_only&quot;&gt;Make your terminal talk (OSX only)&lt;/h4&gt;
 
-&lt;p&gt;From &lt;a href=&quot;http://xkcd.com/530/&quot;&gt;http://xkcd.com/530/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;say &amp;quot;hey im locked out downstairs&amp;quot;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;say &amp;quot;hey im locked out downstairs&amp;quot;&lt;/code&gt; (extracted from &lt;a href=&quot;http://xkcd.com/530/&quot;&gt;http://xkcd.com/530/&lt;/a&gt;)&lt;/p&gt;
 
 &lt;h4 id=&quot;ascii_art_username&quot;&gt;ASCII art username&lt;/h4&gt;
 
-&lt;p&gt;&lt;code&gt;banner $USER&lt;/code&gt; Ok, maybe not the most useful command…&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;banner $USER&lt;/code&gt; maybe not the most useful command… :)&lt;/p&gt;
 
 &lt;h4 id=&quot;ascii_movie&quot;&gt;ASCII movie&lt;/h4&gt;
 
-&lt;p&gt;&lt;code&gt;telnet towel.blinkenlights.nl&lt;/code&gt; Pop some popcorn and enjoy the show :)&lt;/p&gt;</content>
+&lt;p&gt;&lt;code&gt;telnet towel.blinkenlights.nl&lt;/code&gt; pop some popcorn and enjoy the show&lt;/p&gt;</content>
  </entry>
  
  <entry>
