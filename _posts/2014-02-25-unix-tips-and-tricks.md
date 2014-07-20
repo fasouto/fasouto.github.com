@@ -11,6 +11,7 @@ published: true
 In 1986 [Jon Bentley](http://en.wikipedia.org/wiki/Jon_Bentley) asked to [Donald Knuth](http://en.wikipedia.org/wiki/Donald_Knuth) to write a program using the literate programming paradigm. This code will be published in a ACM magazine along with a critique by Doug McIlroy.
 
 The task was this:
+
 > Read a file of text, determine the n most frequently used words, and print out a sorted list of those words along with their frequencies.
 
 Knuth wrote his program in WEB, a literate programming system. He wrote a good solution for this task using a custom data structure, but McIlroy published a 6 line shell pipeline that do the same as the Knuth 10+ pages.
