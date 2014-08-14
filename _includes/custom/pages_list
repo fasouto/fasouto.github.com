@@ -1,5 +1,5 @@
 <ul class="nav nav-pills pull-right">
     <li class=""><a href="/archive.html">articles</a></li>
-    <li class=""><a href="/projects">projects</a></li>
+    <!--<li class=""><a href="/projects">projects</a></li>-->
     <li class=""><a href="/about">about</a></li>
 </ul>
