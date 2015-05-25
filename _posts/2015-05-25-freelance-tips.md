@@ -42,7 +42,7 @@ Remember the [80-20 rule](http://en.wikipedia.org/wiki/Pareto_principle) in soft
 
 ### Don't have a portfolio or an amazing side project to show
 
-I spent two years and a lot of energy working for an small startup. I'm very proud of the result but it's a closed beta, I cannot show this project to my potential clients.
+I spent two years and a lot of energy working for an small startup. I'm very proud of the result but since it's a closed beta I cannot show this project to my potential clients.
 
 Also I created several internal dashboards that are protected under NDAs.
 
@@ -80,7 +80,7 @@ You'll have a lot of problems, try to minimize them. I spent a couple of weeks j
 
 ### Rent a coworking space
 
-Working from home and gets old quickly, you'll end working all day in pijamas and checking email 24/7 ([relevant Oatmeal comic](http://theoatmeal.com/comics/working_home)).
+Working from home and gets old quickly, I ended up working in pyjamas and checking email 24/7 ([relevant Oatmeal comic](http://theoatmeal.com/comics/working_home)).
 
 Now I am a happy ["anidado"](http://www.espacionido.es/). I enjoy a healthy work-life balance and I'm surrounded by interesting people.
 
