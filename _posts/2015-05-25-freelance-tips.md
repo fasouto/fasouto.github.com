@@ -70,7 +70,7 @@ This way we are in a position where we are collaborating not fighting.
 
 - Create a template for invoices and other for proposals
 - Have your CV updated
-- Automate the billing process as much as you can
+- Automate the billing process
 
 
 ### Learn the technology stack that are you using well
@@ -80,7 +80,7 @@ You'll have a lot of problems, try to minimize them. I spent a couple of weeks j
 
 ### Rent a coworking space
 
-I started working from home and it gets old quickly, you'll end working all day in pijamas and checking email 24/7 ([relevant Oatmeal comic](http://theoatmeal.com/comics/working_home)).
+Working from home and gets old quickly, you'll end working all day in pijamas and checking email 24/7 ([relevant Oatmeal comic](http://theoatmeal.com/comics/working_home)).
 
 Now I am a happy ["anidado"](http://www.espacionido.es/). I enjoy a healthy work-life balance and I'm surrounded by interesting people.
 
@@ -99,9 +99,9 @@ And **make it the official channel to request for changes in your software**. It
 
 ### Be proactive and professional
 
-Most clients just want to solve a problem, don't be afraid to suggest changes. And if you hit a wall or found an unexpecting problem report it to the client soon. 
+Most clients just want to solve a problem, don't be afraid to suggest changes. Communicate effectively and on time, if you found an unexpected problem report it soon. 
 
-And last, the key is to get more and better clients is to be extremely professional. The math it's deadly simple: 
+And last, the key to get more and better clients is to be extremely professional. The math it's deadly simple: 
 
     10 exceed client expectations 
     20 get referals 
