@@ -13,23 +13,23 @@ It's been three years since I decided to start freelancing. It has been a rough 
 
 ## What I did wrong
 
+### Take too many projects at a time
+
+I'm pretty bad at multitasking, I do my best one project at a time. If I have several projects to work at the same time I waste too much time getting "in the zone".
+
+Last April I had a horrible situation, suddenly my main client run out of money. At the same time, I had three more clients asking changes every month or so. It wasn't enough so I get a new client. Suddenly within a week all of them wanted changes at the same time, all of them were urgent. I had to work day and night during three weeks.
+
+
 ### Bill hourly
 
 I started billing hourly and this was the biggest mistake so far:
 
  - Clients can micromanage you: "This task shouldn't take more than an hour…"
- - As a developer you need some time to get into "the zone", if you have to switch tasks constantly you are wasting a lot of time. [Humans are very bad at multitasking](http://www.livescience.com/37420-multitasking-brain-psychology.html).
  - It's very difficult to organise your time if you have 2 hours for company A, 4 for company B, talk with client C…
  - Every project have some overhead(billing, emails, time tracking…) independent on how big is it. To bill 40 hours you'll need to spend 50-60 working.
 
 I solved this situation setting three rates: hourly, daily and weekly. Obviously,  `hourly rate > daily rate/8 > weekly rate/40` so clients have an incentive to hire me on weekly basis.
 
-
-### Take too many projects at a time
-
-As I said I'm pretty bad at multitasking, I do my best one project at a time. 
-
-Last April I had a horrible situation, suddenly my main client run out of money. At the same time, I had three more clients asking changes every month or so. It wasn't enough so I get a new client. Suddenly within a week all of them wanted changes at the same time, all of them were urgent. I had to work day and night during three weeks.
 
 
 ### Take jobs that are 'almost finished'
@@ -51,7 +51,7 @@ I've done a lot of work but I have a tiny portfolio.
 
 ### Don't bill regularly
 
-Some clients will pay late or never, make small payments so you get to know how serious are with the money.
+Some clients will pay late or never, send your invoices early so you get to know how serious they are with the money.
 
 
 
