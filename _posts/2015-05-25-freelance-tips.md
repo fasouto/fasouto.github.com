@@ -15,9 +15,9 @@ It's been three years since I decided to start freelancing. It has been a rough 
 
 ### Take too many projects at a time
 
-I'm pretty bad at multitasking, I do my best one project at a time. If I have several projects to work at the same time I waste too much time getting "in the zone".
+I'm pretty bad at multitasking, I do my best one project at a time. If I have several projects to work at the same time I waste too much time changing the context and getting into "the zone".
 
-Last April I had a horrible situation, suddenly my main client run out of money. At the same time, I had three more clients asking changes every month or so. It wasn't enough so I get a new client. Suddenly within a week all of them wanted changes at the same time, all of them were urgent. I had to work day and night during three weeks.
+Last year I had a horrible situation, suddenly my main client run out of money so I  rush to find some clients (a lot of them). Suddenly all my clients wanted changes at the same time, all of them were urgent. I had to work day and night during three weeks.
 
 
 ### Bill hourly
@@ -28,13 +28,13 @@ I started billing hourly and this was the biggest mistake so far:
  - It's very difficult to organise your time if you have 2 hours for company A, 4 for company B, talk with client C…
  - Every project have some overhead(billing, emails, time tracking…) independent on how big is it. To bill 40 hours you'll need to spend 50-60 working.
 
-I solved this situation setting three rates: hourly, daily and weekly. Obviously,  `hourly rate > daily rate/8 > weekly rate/40` so clients have an incentive to hire me on weekly basis.
+I solved this situation setting hourly, daily and weekly rates. Obviously,  `hourly rate > daily rate/8 > weekly rate/40` so clients have an incentive to hire me on a weekly basis.
 
 
 
 ### Take jobs that are 'almost finished'
 
-Chances are that are not near completion, and the client budget is finishing. You'll have to adapt to a new codebase (not billable hours) and fix all the remaining bugs that are the difficult ones. 
+Chances are that are not near completion, but the client budget is finishing. You'll have to adapt to a new codebase and fix all the remaining bugs that are the difficult ones. 
 
 Remember the [80-20 rule](http://en.wikipedia.org/wiki/Pareto_principle) in software development, 80% of the functionality will be done in 20% of the time and the remaining time you'll be coding the other 20%.
 
@@ -75,12 +75,12 @@ This way we are in a position where we are collaborating not fighting.
 
 ### Learn the technology stack that are you using well
 
-You'll have a lot of problems, try to minimize them. I spent a couple of weeks just playing with some parts of Django that I never used, reading manuals, articles about best practices, answering questions on Stackoverflow…
+I spent a couple of weeks just playing with some parts of Django that I never used, reading manuals, articles about best practices, answering questions on Stackoverflow…
 
 
 ### Rent a coworking space
 
-Working from home and gets old quickly, I ended up working in pyjamas and checking email 24/7 ([relevant Oatmeal comic](http://theoatmeal.com/comics/working_home)).
+Working from home can be great one day but it gets old quickly, I ended up working in pyjamas and checking email 24/7 ([relevant Oatmeal comic](http://theoatmeal.com/comics/working_home)).
 
 Now I am a happy ["anidado"](http://www.espacionido.es/). I enjoy a healthy work-life balance and I'm surrounded by interesting people.
 
@@ -99,9 +99,9 @@ And **make it the official channel to request for changes in your software**. It
 
 ### Be proactive and professional
 
-Most clients just want to solve a problem, don't be afraid to suggest changes. Communicate effectively and on time, if you found an unexpected problem report it soon. 
+Most clients just want to solve a problem, don't be afraid to suggest changes. Communicate effectively and on time and if you found an unexpected problem report it soon.
 
-And last, the key to get more and better clients is to be extremely professional. The math it's deadly simple: 
+The key to get more and better clients is to be extremely professional. It's deadly simple: 
 
     10 exceed client expectations 
     20 get referals 
