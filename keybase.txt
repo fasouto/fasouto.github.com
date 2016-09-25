@@ -1,0 +1,69 @@
+==================================================================
+https://keybase.io/fasouto
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://fabiosouto.me
+  * I am fasouto (https://keybase.io/fasouto) on keybase.
+  * I have a public key with fingerprint DA8F 5C28 8EAE 5182 ABB3  F7B5 1BA3 FAC0 58F6 4F51
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01017dfc6d240f3a305ec5d3f92f3d5dd1252c33cee974def0a324ffab273146776e0a",
+            "fingerprint": "da8f5c288eae5182abb3f7b51ba3fac058f64f51",
+            "host": "keybase.io",
+            "key_id": "1ba3fac058f64f51",
+            "kid": "01017dfc6d240f3a305ec5d3f92f3d5dd1252c33cee974def0a324ffab273146776e0a",
+            "uid": "5f87e8b68e6429b052ea92cfbe5dd819",
+            "username": "fasouto"
+        },
+        "service": {
+            "hostname": "fabiosouto.me",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1474842451,
+    "expire_in": 157680000,
+    "prev": "46c2072f7fc01ba4c66335c45ea86be6abbd784c9a30bcc37bd9d118ebaa64fb",
+    "seqno": 4,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.56
+Comment: https://keybase.io/crypto
+
+yMIjAnicrVJbSFRBGN7NDDMMi+gGJp6XghY5l5lzZlciu1kRXaAHC7Vlru5xdc96
+9uxmhVF0s/uFrlBkBF0oqUQkouimRIUvBeJDBgVRUQpFWVRLzZHqqcfmZfj/+b5v
+vv+b6SrICeQHF/ccKXmyZPHt4OO7R9OByjfLV25QiMPWKZENSpwPb7ye8ZQXjdtM
+iSiqpmoWE9RkOlCFgQ0VcgqZIcK6MBhkTNOhTg2Dch62AONCxYYOhMBEtwwNmJZl
+chUrIUXYiVruJl074UlZhpGAVEeIYw41pGNCDGERqBFsCExViIQJBNQkMeakfIY0
+R3CKl9qO7MkiOmzvH/j/7Ds9LAcFsjgiJuIm0MNEhTrHYZ0KwqUU0sI+MMXdBG7g
+Ei1wykl7jtIcUmQzY1Pu5+oP8hdAbGcYUyrrkJJ0Hc+hTr08inleMuIzvXVJH7qW
+k+hvkSixE0zGKAkZ7qZsJ6FENImknu2rasACCOgAaiGFNyVtl0dtHwEtE6ly+dfw
+jJQEJtVVSxeWoKoMEFDTNAxIAeQYmYSb8jGYhQANy9QIpYZFWJhpGuIEY5kyUfyx
+GhOOEgHSJq6Vkim7NoG9tMuV5nt3qkcGgvmBUbkj/O8VyB9d+OfTFYK8wBXo7Aw2
+ld+u6po2fkt3R25ZwYvjV89tK2iKhZ6XtEbrzs0fV57zfl/H/e4zA4++nhyc8q37
+VB+u2x3erJc/dE8eW9246Ubnocz5B6dPTIHPXveWt1+eE02gvoprLbkXG4vbumZ+
+/9Q/effSorE/4xNOTF2Sc3yo9GOPvWd98/SXs1lnPLgwm5kxKb7gQ1F2/Bu3uLT9
+1o2qV/lbXy9qbVnWWTa4o+3Lrqrz+1eJ1iEo9j8K5H7uut7ReOnHsezSl2+RuHiw
+/sDPh0/Rl8OzY6mzrBV+6J83pnLvQPHgu2y2csW+lprgq1mnCqoHNta83Z4HOtMV
+N3/M9QpjB0vGTexd01B9IfILkyJGXg==
+=p+Kq
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/fasouto
+
+==================================================================
+
