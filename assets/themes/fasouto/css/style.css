@@ -7,6 +7,13 @@ body {
   border-top:7px solid #333;
 }
 
+.nav-pills>li.active>a {
+  background-color:#F02311;
+}
+
+.nav-pills>li.active>a:hover {
+  background-color:#F02311;
+}
 
 /* Make the page more narrow */
 .main-header,
