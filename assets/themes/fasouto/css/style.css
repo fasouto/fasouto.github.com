@@ -80,6 +80,10 @@ code {
   margin-bottom:2%;
 }
 
+header {
+  padding-bottom: 20px;
+}
+
 /* The white background content wrapper */
 .content {
   padding-top: 30px;

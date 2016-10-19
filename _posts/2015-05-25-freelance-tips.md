@@ -13,11 +13,11 @@ It's been three years since I decided to start freelancing. It has been a rough 
 
 ## What I did wrong
 
-### Take too many projects at a time
+### Took too many projects at a time
 
 I'm pretty bad at multitasking, I do my best one project at a time. If I have several projects to work at the same time I waste too much time changing the context and getting into "the zone".
 
-Last year I had a horrible situation, suddenly my main client run out of money so I  rush to find some clients (a lot of them). Suddenly all my clients wanted changes at the same time, all of them were urgent. I had to work day and night during three weeks.
+Last year what it was my main client ran out of money so I rush to find more clients (a lot of them). Everything was fine until suddenly all clients wanted changes at the same time, all of them urgent. I had to work day and night during three weeks.
 
 
 ### Bill hourly
@@ -25,7 +25,7 @@ Last year I had a horrible situation, suddenly my main client run out of money s
 I started billing hourly and this was the biggest mistake so far:
 
  - Clients can micromanage you: "This task shouldn't take more than an hour…"
- - It's very difficult to organise your time if you have 2 hours for company A, 4 for company B, talk with client C…
+ - It's very difficult to organise your time if you have 2 hours for company A, 4 for company B, a meeting with client C…
  - Every project have some overhead(billing, emails, time tracking…) independent on how big is it. To bill 40 hours you'll need to spend 50-60 working.
 
 I solved this situation setting hourly, daily and weekly rates. Obviously,  `hourly rate > daily rate/8 > weekly rate/40` so clients have an incentive to hire me on a weekly basis.
@@ -61,7 +61,7 @@ Some clients will pay late or never, send your invoices early so you get to know
 
 I only did per project billing for clients that have very clear what they want and know how to express it. Sometimes your client assume some features that you didn't catch in the requirements and there's a conflict.
 
-I tell my clients that estimate software is a hard task and suggest to work on a weekly basis. Every friday I show them the changes and we chat about what we can do next week. If for some reason the client felt that I didn't work enough(never happened so far) we split ways.
+I tell my clients that estimate software it's very hard and suggest to work on a weekly basis. Every friday I show them the changes and we chat about what we can do next week. If for some reason the client felt that I didn't work enough(never happened so far) we split ways.
 
 This way we are in a position where we are collaborating not fighting.
 
@@ -106,4 +106,3 @@ The key to get more and better clients is to be extremely professional. It's dea
     10 exceed client expectations 
     20 get referals 
     30 GOTO 10
-	
