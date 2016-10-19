@@ -47,7 +47,7 @@ meet all the requirements, I just use it as a reference and it helps me to reinf
 - Navigation is easy to identify?
 - Favicon and mobile icons
 
-### Accesibility
+### Accesibilito
 - [Accesibility validation](http://wave.webaim.org/)
 - Images with alt text 
 - Test different resolutions and font sizes
@@ -61,11 +61,10 @@ meet all the requirements, I just use it as a reference and it helps me to reinf
 ### SEO 
 - Redirect http://www to http:// 
 - Check meta tags 
-- Add canonical tag to duplicated content
+- Add [canonical tag](http://positionly.com/blog/seo/canonical-url-tag) to duplicated content
 - Sitemap.xml 
 - Check url structure 
-- Create a robots.txt
-- Page titles with keywords 
+- Create a [robots.txt](https://developers.google.com/webmasters/control-crawl-index/docs/robots_txt)
 - Submit to search engines 
 - Build some backlinks
 
@@ -77,4 +76,3 @@ meet all the requirements, I just use it as a reference and it helps me to reinf
 - Check HTTPS
 - Scan vulnerabilities with an automatic tool
 - CSRF token
-- 
