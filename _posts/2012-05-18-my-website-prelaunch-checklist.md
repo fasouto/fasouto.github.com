@@ -8,31 +8,29 @@ published: true
 ---
 {% include JB/setup %}
 
-This is a document that I've been updating during 3+ years. Obviously It's not mandatory to
+This is a document that I've been updating during the latest years. Obviously It's not mandatory to
 meet all the requirements, I just use it as a reference and it helps me to reinforce good practices. Feel free to make suggestions.
-
 
 
 ### Application testing
 - Ensure all test are passing
 - Stop verbose error reporting, then check 404 and 500 pages
-- Security test 
 
 ### Backups
-- Set [backup strategy ](http://www.gfi.com/blog/create-complex-secure-backup-strategy/)
+- Set [backup strategy ](https://blog.sucuri.net/2015/04/how-to-create-a-website-backup-strategy.html)
 - Test backups
 
 ### Load time 
 - Load test ([blitz.io](), [JMeter](http://jmeter.apache.org/)...) 
 - Check number of HTTP requests 
 - Add expires headers 
-- Put JS at bottom
+- Move JS to the bottom
 - Compress/minimize js/css 
-- Serve gzipped content
+- Check if server it's serving gzipped content
 - Optimize images 
-- Caching 
+- Enable caching 
 - Check indexes in the database 
-- Use CDN
+- Configure CDN
 
 ### Monitoring
 - Server monitoring ([Munin](http://munin-monitoring.org/), [Nagios](http://www.nagios.org/)...)
@@ -40,23 +38,19 @@ meet all the requirements, I just use it as a reference and it helps me to reinf
 - Setup Feedburner
 
 ### Standards 
-- Accesibility validation 
-- HTML validation 
-- JS validation 
-- CSS validation 
-- [Opensearch](http://www.opensearch.org/)
+- HTML/JS/CSS validation 
+- If the site use search, check [Opensearch](http://www.opensearch.org/)
 
 ### Design 
-- Adequate text-to-background contrast 
-- Readability 
-- Navigation is easy to identify 
-- Favicon 
-- Apple icons
+- Check if the text-to-background contrast is adequate
+- Page readability 
+- Navigation is easy to identify?
+- Favicon and mobile icons
 
 ### Accesibility
+- [Accesibility validation](http://wave.webaim.org/)
 - Images with alt text 
-- Test different resolutions 
-- Test with Internet Explorer 
+- Test different resolutions and font sizes
 - Test on mobile devices
 
 ### Social 
@@ -73,5 +67,14 @@ meet all the requirements, I just use it as a reference and it helps me to reinf
 - Create a robots.txt
 - Page titles with keywords 
 - Submit to search engines 
-- Build some backlinks  
-- Ensure semantical content 
+- Build some backlinks
+
+### Legal stuff
+- Check terms and conditions
+- EU cookie law
+
+### Security
+- Check HTTPS
+- Scan vulnerabilities with an automatic tool
+- CSRF token
+- 
