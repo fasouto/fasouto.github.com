@@ -182,7 +182,6 @@ this creates the following tree:
 
 `cp ReallyLongFileNameYouDontWantToTypeTwice{,.orig}` ([from shell-fu](http://www.shell-fu.org/lister.php?id=46))
 
-
 #### Return to the previous directory
 
 Sometimes you are required to hop between two directories, in those cases you can use
@@ -200,19 +199,13 @@ Sometimes you are required to hop between two directories, in those cases you ca
 
 ` curl ifconfig.me `
 
-
-#### Show ascii table
-
-`man ascii` quickly access the table of ascii characters
-
-
 #### Make your terminal talk (OSX only)
 
 `say "hey im locked out downstairs"` (extracted from [http://xkcd.com/530/](http://xkcd.com/530/))
 
-#### ASCII art username
+#### ASCII username
 
-`banner $USER` maybe not the most useful command… :)
+`banner $USER` (ok... maybe not the most useful command)
 
 #### ASCII movie
-`telnet towel.blinkenlights.nl` pop some popcorn and enjoy the show
+`Telnet towel.blinkenlights.nl` pop some popcorn and enjoy the show
