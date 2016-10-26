@@ -73,6 +73,6 @@ meet all the requirements, I just use it as a reference and it helps me to reinf
 - EU cookie law
 
 ### Security
-- Check HTTPS
+- [Check HTTPS](https://www.ssllabs.com/ssltest/)
 - Scan vulnerabilities with an automatic tool
 - CSRF token
