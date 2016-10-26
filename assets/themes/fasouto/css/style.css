@@ -1,17 +1,17 @@
 * {
-  font-family:'OFL Sorts Mill Goudy','OFL Sorts Mill Goudy TT',serif;
-  text-rendering:optimizeLegibility;
+  font-family: 'OFL Sorts Mill Goudy','OFL Sorts Mill Goudy TT',serif;
+  text-rendering: optimizeLegibility;
 }
 
 body {
   border-top:7px solid #333;
 }
 
-.nav-pills>li.active>a {
+.nav-pills > li.active > a {
   background-color:#F02311;
 }
 
-.nav-pills>li.active>a:hover {
+.nav-pills > li.active > a:hover {
   background-color:#F02311;
 }
 
@@ -136,4 +136,10 @@ header > h3 {
 
 ::-moz-selection {
   background: #fff2a8; /* Firefox */
+}
+
+@media only screen and (max-width : 768px) {
+ body {
+        font-size: 12px;
+    }
 }

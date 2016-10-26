@@ -57,13 +57,7 @@ When running commands, sometimes I'll want to run a command with the previous on
 	$ mkdir /tmp/new
 	$ cd !!:*
 
-And if you make a typo, you can run the previous command replacing foo for bar, like this.
-
-`^foo^bar` 
-
-## Useful aliases
-
-I have more useful aliases on my [dotfiles on github](https://github.com/fsouto/dotfiles/blob/master/.aliases)
+And if you make a typo, you can run the previous command replacing foo for bar, like this: `^foo^bar` 
 
 #### Prevent accidents
 
@@ -102,8 +96,6 @@ To open a file in quicklook:
 
 To move along the text is important to be confortable with readline. I printed [this realine cheatsheet](http://www.bigsmoke.us/readline/shortcuts) and have it near my computer: 
 
-##### The basics 
-
 `Crtl + a` move the cursor to the start of the line
 
 `Crtl + e` move the cursor to the start of the line
@@ -127,7 +119,7 @@ Serves the current directory in HOSTNAME:8000 or HOSTNAME:port
 
 `python -m SimpleHTTPServer [port]` 
 
-Now imagine this scenario: you want to test an application that send emails, but you are too lazy to install and configure an email server. With this command all the emails received will be printed to the stardart output.
+Imagine this scenario: you want to test an application that send email. You can install and configure an email server or use this command that prints all the received emails to the terminal:
 
 `python -m smtpd -n -c DebuggingServer localhost:25` 
 
@@ -145,12 +137,12 @@ I used to upload files to my servers using ftp or scp until I discovered rsync(r
 
 #### Job control with disown
 
-This command is incredibly useful, sometimes you forgot to start a time consuming command with nohup or screen and you need to go offline while the command is still running. You can pause it with `crtl-z` move it to the background with `bg`and then protect it from SIGHUP using `disown`, so you can quit your ssh session.
+This command it's incredibly useful, sometimes you forgot to start a time consuming command with nohup or screen and you need to go offline while the command is still running. You can pause it with `crtl-z` move it to the background with `bg`and then protect it from SIGHUP using `disown`, so you can quit your ssh session.
 
 `disown jobID`
 
 
-#### Make a directory tree quicker
+#### Make a directory tree
 
 Usually I create a directory tree one at a time:
 
@@ -161,8 +153,7 @@ Usually I create a directory tree one at a time:
 	$ mkdir bar
 	…
 
-
-But it's faster to use the -p option of mkdir. So instead of this I just need to type:
+It's faster to use the -p option of mkdir. You just need to type:
 
 `$ mkdir -p tmp/foo/bar`
 
