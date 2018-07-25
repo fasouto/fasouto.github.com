@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
  
  <title>Fabio Souto</title>
- <link href="http://fabiosouto.me/atom.xml" rel="self"/>
- <link href="http://fabiosouto.me"/>
- <updated>2018-07-25T20:42:24+02:00</updated>
- <id>http://fabiosouto.me</id>
+ <link href="https://fabiosouto.me/atom.xml" rel="self"/>
+ <link href="https://fabiosouto.me"/>
+ <updated>2018-07-25T20:55:27+02:00</updated>
+ <id>https://fabiosouto.me</id>
  <author>
    <name>Fabio Souto</name>
    <email>fabio@fabiosouto.me</email>
@@ -14,9 +14,9 @@
  
  <entry>
    <title>On freelancing</title>
-   <link href="http://fabiosouto.me/2015/05/freelance-tips"/>
+   <link href="https://fabiosouto.me/2015/05/freelance-tips"/>
    <updated>2015-05-25T00:00:00+02:00</updated>
-   <id>http://fabiosouto.me/2015/05/freelance-tips</id>
+   <id>https://fabiosouto.me/2015/05/freelance-tips</id>
    <content type="html">
 &lt;p&gt;It’s been three years since I decided to start freelancing. It has been a rough but rewarding journey so far. I made lots of mistakes and learnt many things on the way.&lt;/p&gt;
 
@@ -111,9 +111,9 @@
  
  <entry>
    <title>Unix tips and tricks</title>
-   <link href="http://fabiosouto.me/2014/02/unix-tips-and-tricks"/>
+   <link href="https://fabiosouto.me/2014/02/unix-tips-and-tricks"/>
    <updated>2014-02-25T00:00:00+01:00</updated>
-   <id>http://fabiosouto.me/2014/02/unix-tips-and-tricks</id>
+   <id>https://fabiosouto.me/2014/02/unix-tips-and-tricks</id>
    <content type="html">
 &lt;p&gt;In 1986 &lt;a href=&quot;http://en.wikipedia.org/wiki/Jon_Bentley&quot;&gt;Jon Bentley&lt;/a&gt; asked to &lt;a href=&quot;http://en.wikipedia.org/wiki/Donald_Knuth&quot;&gt;Donald Knuth&lt;/a&gt; to write a program using the literate programming paradigm. This code will be published in a ACM magazine along with a critique by Doug McIlroy.&lt;/p&gt;
 
@@ -318,9 +318,9 @@ $ mkdir bar
  
  <entry>
    <title>My website prelaunch checklist</title>
-   <link href="http://fabiosouto.me/2012/05/my-website-prelaunch-checklist"/>
+   <link href="https://fabiosouto.me/2012/05/my-website-prelaunch-checklist"/>
    <updated>2012-05-18T00:00:00+02:00</updated>
-   <id>http://fabiosouto.me/2012/05/my-website-prelaunch-checklist</id>
+   <id>https://fabiosouto.me/2012/05/my-website-prelaunch-checklist</id>
    <content type="html">
 &lt;p&gt;This is a document that I’ve been updating during the latest years. Obviously It’s not mandatory to
 meet all the requirements, I just use it as a reference and it helps me to reinforce good practices. Feel free to make suggestions.&lt;/p&gt;
@@ -416,9 +416,9 @@ meet all the requirements, I just use it as a reference and it helps me to reinf
  
  <entry>
    <title>New site</title>
-   <link href="http://fabiosouto.me/2012/05/new-site"/>
+   <link href="https://fabiosouto.me/2012/05/new-site"/>
    <updated>2012-05-15T00:00:00+02:00</updated>
-   <id>http://fabiosouto.me/2012/05/new-site</id>
+   <id>https://fabiosouto.me/2012/05/new-site</id>
    <content type="html">
 &lt;p&gt;I had this site a little bit abandoned, so I decided to rewrite it one more time. This time I opted for a simpler design but the biggest change is that I decided to abandon &lt;a href=&quot;https://www.djangoproject.com/&quot;&gt;Django&lt;/a&gt; and create a static site.&lt;/p&gt;
 

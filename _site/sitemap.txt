@@ -1,13 +1,13 @@
 
-http://fabiosouto.me/404
-http://fabiosouto.me/archive
-http://fabiosouto.me/atom.xml
-http://fabiosouto.me/about/
-http://fabiosouto.me/
-http://fabiosouto.me/pages
-http://fabiosouto.me/sitemap.txt
+https://fabiosouto.me/404
+https://fabiosouto.me/archive
+https://fabiosouto.me/atom.xml
+https://fabiosouto.me/about/
+https://fabiosouto.me/
+https://fabiosouto.me/pages
+https://fabiosouto.me/sitemap.txt
 
-http://fabiosouto.me/2015/05/freelance-tips
-http://fabiosouto.me/2014/02/unix-tips-and-tricks
-http://fabiosouto.me/2012/05/my-website-prelaunch-checklist
-http://fabiosouto.me/2012/05/new-site
+https://fabiosouto.me/2015/05/freelance-tips
+https://fabiosouto.me/2014/02/unix-tips-and-tricks
+https://fabiosouto.me/2012/05/my-website-prelaunch-checklist
+https://fabiosouto.me/2012/05/new-site
