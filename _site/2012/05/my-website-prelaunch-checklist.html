@@ -1,0 +1,155 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Fabio Souto">
+    <meta name="description" content="Things to check before launch day">
+
+    <title>My website prelaunch checklist</title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/themes/fasouto/css/style.css" rel="stylesheet" type="text/css" media="all">
+    <link href='http://fonts.googleapis.com/css?family=OFL+Sorts+Mill+Goudy+TT:regular,italic' rel='stylesheet' type='text/css' />
+  </head>
+
+  <body>
+
+    <div class="container">      
+        <div class="main-header">
+            <ul class="nav nav-pills pull-right">
+    <li class=""><a href="/archive.html">articles</a></li>
+    <!--<li class=""><a href="/projects">projects</a></li>-->
+    <li class=""><a href="/about">about</a></li>
+</ul>
+
+            <h1 class="logo"><a href="/">fabio souto</a></h1>
+        </div>
+
+      <div class="content">
+        <div class="clearfix"></div>
+        
+
+
+<div class="row">
+  <div class="col-md-8 col-md-offset-2 col-sm-12">
+    <article>
+      <header>
+        <h1>My website prelaunch checklist<h1>
+        <h3>Things to check before launch day</h3>
+      </header>
+      
+<p>This is a document that I’ve been updating during the latest years. Obviously It’s not mandatory to
+meet all the requirements, I just use it as a reference and it helps me to reinforce good practices. Feel free to make suggestions.</p>
+
+<h3 id="application-testing">Application testing</h3>
+<ul>
+  <li>Ensure all test are passing</li>
+  <li>Stop verbose error reporting, then check 404 and 500 pages</li>
+</ul>
+
+<h3 id="backups">Backups</h3>
+<ul>
+  <li>Set <a href="https://blog.sucuri.net/2015/04/how-to-create-a-website-backup-strategy.html">backup strategy </a></li>
+  <li>Test backups</li>
+</ul>
+
+<h3 id="load-time">Load time</h3>
+<ul>
+  <li>Load test (<a href="">blitz.io</a>, <a href="http://jmeter.apache.org/">JMeter</a>…)</li>
+  <li>Check number of HTTP requests</li>
+  <li>Add expires headers</li>
+  <li>Move JS to the bottom</li>
+  <li>Compress/minimize js/css</li>
+  <li>Check if server it’s serving gzipped content</li>
+  <li>Optimize images</li>
+  <li>Enable caching</li>
+  <li>Check indexes in the database</li>
+  <li>Configure CDN</li>
+</ul>
+
+<h3 id="monitoring">Monitoring</h3>
+<ul>
+  <li>Server monitoring (<a href="http://munin-monitoring.org/">Munin</a>, <a href="http://www.nagios.org/">Nagios</a>…)</li>
+  <li>Setup web analytics</li>
+  <li>Setup Feedburner</li>
+</ul>
+
+<h3 id="standards">Standards</h3>
+<ul>
+  <li>HTML/JS/CSS validation</li>
+  <li>If the site use search, check <a href="http://www.opensearch.org/">Opensearch</a></li>
+</ul>
+
+<h3 id="design">Design</h3>
+<ul>
+  <li>Check if the text-to-background contrast is adequate</li>
+  <li>Page readability</li>
+  <li>Navigation is easy to identify?</li>
+  <li>Favicon and mobile icons</li>
+</ul>
+
+<h3 id="accesibilito">Accesibilito</h3>
+<ul>
+  <li><a href="http://wave.webaim.org/">Accesibility validation</a></li>
+  <li>Images with alt text</li>
+  <li>Test different resolutions and font sizes</li>
+  <li>Test on mobile devices</li>
+</ul>
+
+<h3 id="social">Social</h3>
+<ul>
+  <li>Check <a href="http://ogp.me/">Opengraph</a> tags</li>
+  <li>Add/test social buttons</li>
+  <li>Check social button integration with Google analytics</li>
+</ul>
+
+<h3 id="seo">SEO</h3>
+<ul>
+  <li>Redirect http://www to http://</li>
+  <li>Check meta tags</li>
+  <li>Add <a href="http://positionly.com/blog/seo/canonical-url-tag">canonical tag</a> to duplicated content</li>
+  <li>Sitemap.xml</li>
+  <li>Check url structure</li>
+  <li>Create a <a href="https://developers.google.com/webmasters/control-crawl-index/docs/robots_txt">robots.txt</a></li>
+  <li>Submit to search engines</li>
+  <li>Build some backlinks</li>
+</ul>
+
+<h3 id="legal-stuff">Legal stuff</h3>
+<ul>
+  <li>Check terms and conditions</li>
+  <li>EU cookie law</li>
+</ul>
+
+<h3 id="security">Security</h3>
+<ul>
+  <li><a href="https://www.ssllabs.com/ssltest/">Check HTTPS</a></li>
+  <li>Scan vulnerabilities with an automatic tool</li>
+  <li>CSRF token</li>
+</ul>
+
+      <hr>
+
+        <ul class="pager">
+        
+          <li class="previous"><a href="/2012/05/new-site" title="New site">&larr; New site</a></li>
+        
+        
+          <li class="next"><a href="/2014/02/unix-tips-and-tricks" title="Unix tips and tricks">Unix tips and tricks &rarr;</a></li>
+        
+        </ul>
+    </article>
+  </div>
+</div>  
+
+
+      </div>
+
+    </div>
+    
+  </body>
+</html>
+

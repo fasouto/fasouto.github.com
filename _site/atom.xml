@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>Fabio Souto</title>
+ <link href="http://fabiosouto.me/atom.xml" rel="self"/>
+ <link href="http://fabiosouto.me"/>
+ <updated>2018-07-25T20:42:24+02:00</updated>
+ <id>http://fabiosouto.me</id>
+ <author>
+   <name>Fabio Souto</name>
+   <email>fabio@fabiosouto.me</email>
+ </author>
+
+ 
+ <entry>
+   <title>On freelancing</title>
+   <link href="http://fabiosouto.me/2015/05/freelance-tips"/>
+   <updated>2015-05-25T00:00:00+02:00</updated>
+   <id>http://fabiosouto.me/2015/05/freelance-tips</id>
+   <content type="html">
+&lt;p&gt;It’s been three years since I decided to start freelancing. It has been a rough but rewarding journey so far. I made lots of mistakes and learnt many things on the way.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-i-did-wrong&quot;&gt;What I did wrong&lt;/h2&gt;
+
+&lt;h3 id=&quot;took-too-many-projects-at-a-time&quot;&gt;Took too many projects at a time&lt;/h3&gt;
+
+&lt;p&gt;I’m pretty bad at multitasking, I do my best one project at a time. If I have several projects to work at the same time I waste too much time changing the context and getting into “the zone”.&lt;/p&gt;
+
+&lt;p&gt;Last year what it was my main client ran out of money so I rush to find more clients (a lot of them). Everything was fine until suddenly all clients wanted changes at the same time, all of them urgent. I had to work day and night during three weeks.&lt;/p&gt;
+
+&lt;h3 id=&quot;bill-hourly&quot;&gt;Bill hourly&lt;/h3&gt;
+
+&lt;p&gt;I started billing hourly and this was the biggest mistake so far:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Clients can micromanage you: “This task shouldn’t take more than an hour…”&lt;/li&gt;
+  &lt;li&gt;It’s very difficult to organise your time if you have 2 hours for company A, 4 for company B, a meeting with client C…&lt;/li&gt;
+  &lt;li&gt;Every project have some overhead(billing, emails, time tracking…) independent on how big is it. To bill 40 hours you’ll need to spend 50-60 working.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I solved this situation setting hourly, daily and weekly rates. Obviously,  &lt;code class=&quot;highlighter-rouge&quot;&gt;hourly rate &amp;gt; daily rate/8 &amp;gt; weekly rate/40&lt;/code&gt; so clients have an incentive to hire me on a weekly basis.&lt;/p&gt;
+
+&lt;h3 id=&quot;take-jobs-that-are-almost-finished&quot;&gt;Take jobs that are ‘almost finished’&lt;/h3&gt;
+
+&lt;p&gt;Chances are that are not near completion, but the client budget is finishing. You’ll have to adapt to a new codebase and fix all the remaining bugs that are the difficult ones.&lt;/p&gt;
+
+&lt;p&gt;Remember the &lt;a href=&quot;http://en.wikipedia.org/wiki/Pareto_principle&quot;&gt;80-20 rule&lt;/a&gt; in software development, 80% of the functionality will be done in 20% of the time and the remaining time you’ll be coding the other 20%.&lt;/p&gt;
+
+&lt;h3 id=&quot;dont-have-a-portfolio-or-an-amazing-side-project-to-show&quot;&gt;Don’t have a portfolio or an amazing side project to show&lt;/h3&gt;
+
+&lt;p&gt;I spent two years and a lot of energy working for an small startup. I’m very proud of the result but since it’s a closed beta I cannot show this project to my potential clients.&lt;/p&gt;
+
+&lt;p&gt;Also I created several internal dashboards that are protected under NDAs.&lt;/p&gt;
+
+&lt;p&gt;I’ve done a lot of work but I have a tiny portfolio.&lt;/p&gt;
+
+&lt;h3 id=&quot;dont-bill-regularly&quot;&gt;Don’t bill regularly&lt;/h3&gt;
+
+&lt;p&gt;Some clients will pay late or never, send your invoices early so you get to know how serious they are with the money.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-i-did-good&quot;&gt;What I did good&lt;/h2&gt;
+
+&lt;h3 id=&quot;bill-per-time&quot;&gt;Bill per time&lt;/h3&gt;
+
+&lt;p&gt;I only did per project billing for clients that have very clear what they want and know how to express it. Sometimes your client assume some features that you didn’t catch in the requirements and there’s a conflict.&lt;/p&gt;
+
+&lt;p&gt;I tell my clients that estimate software it’s very hard and suggest to work on a weekly basis. Every friday I show them the changes and we chat about what we can do next week. If for some reason the client felt that I didn’t work enough(never happened so far) we split ways.&lt;/p&gt;
+
+&lt;p&gt;This way we are in a position where we are collaborating not fighting.&lt;/p&gt;
+
+&lt;h3 id=&quot;spend-a-day-or-two-automating-processes&quot;&gt;Spend a day or two automating processes&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Create a template for invoices and other for proposals&lt;/li&gt;
+  &lt;li&gt;Have your CV updated&lt;/li&gt;
+  &lt;li&gt;Automate the billing process&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;learn-the-technology-stack-that-are-you-using-well&quot;&gt;Learn the technology stack that are you using well&lt;/h3&gt;
+
+&lt;p&gt;I spent a couple of weeks just playing with some parts of Django that I never used, reading manuals, articles about best practices, answering questions on Stackoverflow…&lt;/p&gt;
+
+&lt;h3 id=&quot;rent-a-coworking-space&quot;&gt;Rent a coworking space&lt;/h3&gt;
+
+&lt;p&gt;Working from home can be great one day but it gets old quickly, I ended up working in pyjamas and checking email 24/7 (&lt;a href=&quot;http://theoatmeal.com/comics/working_home&quot;&gt;relevant Oatmeal comic&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;Now I am a happy &lt;a href=&quot;http://www.espacionido.es/&quot;&gt;“anidado”&lt;/a&gt;. I enjoy a healthy work-life balance and I’m surrounded by interesting people.&lt;/p&gt;
+
+&lt;p&gt;Just make sure your coworking colleages understand that you need to concentrate when you are working.&lt;/p&gt;
+
+&lt;h3 id=&quot;use-the-services-of-an-accountant&quot;&gt;Use the services of an accountant&lt;/h3&gt;
+
+&lt;p&gt;It just cost me 35€/month and I couldn’t be happier. It removes a lot of overhead and administrative problems. Unfortunately Spain is the &lt;a href=&quot;http://www.doingbusiness.org/data/exploreeconomies/spain/#starting-a-business&quot;&gt;#142 on the ranking of countries where is more difficult to start a business&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;use-an-issue-tracking-tool&quot;&gt;Use an issue tracking tool&lt;/h3&gt;
+
+&lt;p&gt;And &lt;strong&gt;make it the official channel to request for changes in your software&lt;/strong&gt;. It will help you to centralize all the issues (no more email+Skype+phone), discuss and priorize them and keep a log on how did you spend your time.&lt;/p&gt;
+
+&lt;h3 id=&quot;be-proactive-and-professional&quot;&gt;Be proactive and professional&lt;/h3&gt;
+
+&lt;p&gt;Most clients just want to solve a problem, don’t be afraid to suggest changes. Communicate effectively and on time and if you found an unexpected problem report it soon.&lt;/p&gt;
+
+&lt;p&gt;The key to get more and better clients is to be extremely professional. It’s deadly simple:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;10 exceed client expectations 
+20 get referals 
+30 GOTO 10
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Unix tips and tricks</title>
+   <link href="http://fabiosouto.me/2014/02/unix-tips-and-tricks"/>
+   <updated>2014-02-25T00:00:00+01:00</updated>
+   <id>http://fabiosouto.me/2014/02/unix-tips-and-tricks</id>
+   <content type="html">
+&lt;p&gt;In 1986 &lt;a href=&quot;http://en.wikipedia.org/wiki/Jon_Bentley&quot;&gt;Jon Bentley&lt;/a&gt; asked to &lt;a href=&quot;http://en.wikipedia.org/wiki/Donald_Knuth&quot;&gt;Donald Knuth&lt;/a&gt; to write a program using the literate programming paradigm. This code will be published in a ACM magazine along with a critique by Doug McIlroy.&lt;/p&gt;
+
+&lt;p&gt;The task was this:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Read a file of text, determine the n most frequently used words, and print out a sorted list of those words along with their frequencies.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Knuth wrote his program in WEB, a literate programming system. He wrote a good solution for this task using a custom data structure, but McIlroy published a 6 line shell pipeline that do the same as the Knuth 10+ pages.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
+   tr -cs A-Za-z '\n' |
+   tr A-Z a-z |
+   sort |
+   uniq -c |
+   sort -rn |
+   sed ${1}q
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Knuth is an excellent programmer, but McIlroy was able to do it in a more readable, simple way, thanks to the Unix philosophy.&lt;/p&gt;
+
+&lt;p&gt;Unix knowledge can save you a lot of time.&lt;/p&gt;
+
+&lt;h2 id=&quot;master-the-history&quot;&gt;Master the history&lt;/h2&gt;
+
+&lt;p&gt;Using the history efficiently can help to avoid repetitions.&lt;/p&gt;
+
+&lt;p&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;history&lt;/code&gt; command show a list of recently run commands with a numeric id. 
+&lt;code class=&quot;highlighter-rouge&quot;&gt;!&amp;lt;number&amp;gt;&lt;/code&gt; will run the associated command in history.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;!!&lt;/code&gt; repeat the latest command, so &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo !!&lt;/code&gt; run the last typed command as root.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;!-N&lt;/code&gt; run the nth most recent command, so &lt;code class=&quot;highlighter-rouge&quot;&gt;!-1&lt;/code&gt; run the most recent command, &lt;code class=&quot;highlighter-rouge&quot;&gt;!-2&lt;/code&gt; the previous one… and so on.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;!&amp;lt;string&amp;gt;&lt;/code&gt; will run the most recent command that start with &amp;lt;string&amp;gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;!&amp;lt;string&amp;gt;?&lt;/code&gt; run the most recent command that contains &amp;lt;string&amp;gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;!*&lt;/code&gt; Running a second command with the same arguments as the previous command, use &lt;code class=&quot;highlighter-rouge&quot;&gt;!*&lt;/code&gt; to repeat all arguments,&lt;code class=&quot;highlighter-rouge&quot;&gt;!$&lt;/code&gt; get the final argument and &lt;code class=&quot;highlighter-rouge&quot;&gt;!^&lt;/code&gt; the first.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;!:N&lt;/code&gt; will get the Nth argument, &lt;code class=&quot;highlighter-rouge&quot;&gt;!:1&lt;/code&gt; get the first, &lt;code class=&quot;highlighter-rouge&quot;&gt;!:3-4&lt;/code&gt; the third and fourth…&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;!:*&lt;/code&gt; get all the arguments without the command.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;$_&lt;/code&gt; will get last argument&lt;/p&gt;
+
+&lt;p&gt;When running commands, sometimes I’ll want to run a command with the previous ones arguments. To do that, you can use this shortcut:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ mkdir /tmp/new
+$ cd !!:*
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;And if you make a typo, you can run the previous command replacing foo for bar, like this: &lt;code class=&quot;highlighter-rouge&quot;&gt;^foo^bar&lt;/code&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;prevent-accidents&quot;&gt;Prevent accidents&lt;/h4&gt;
+
+&lt;p&gt;The -i or –interactive argument will ask you to confirm before do any destructive change.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;alias cp='cp -i'&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;alias mv='mv -i'&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;alias rm='rm -i'&lt;/code&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;tar-and-untar&quot;&gt;Tar and untar&lt;/h4&gt;
+
+&lt;p&gt;I never remember how to tar/untar, luckily I have this in my aliases&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;alias mkgz=&quot;tar -cvzf&quot;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;alias untar=&quot;tar -xvzf&quot;&lt;/code&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;macosx&quot;&gt;MacOSX&lt;/h4&gt;
+
+&lt;p&gt;To flush the DNS cache:&lt;/p&gt;
+
+&lt;p&gt;Snow Leopard: &lt;code class=&quot;highlighter-rouge&quot;&gt;alias flush=&quot;dscacheutil -flushcache&quot;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Lion or Mountain Lion: &lt;code class=&quot;highlighter-rouge&quot;&gt;alias flush=&quot;sudo killall -HUP mDNSResponder&quot;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;To open a file in quicklook:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;alias ql=&quot;qlmanage -p 2&amp;gt;/dev/null &quot;&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;readline&quot;&gt;Readline&lt;/h2&gt;
+
+&lt;p&gt;To move along the text is important to be confortable with readline. I printed &lt;a href=&quot;http://www.bigsmoke.us/readline/shortcuts&quot;&gt;this realine cheatsheet&lt;/a&gt; and have it near my computer:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Crtl + a&lt;/code&gt; move the cursor to the start of the line&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Crtl + e&lt;/code&gt; move the cursor to the start of the line&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Crtl + r&lt;/code&gt; to search previous typed commands&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Crtl + g&lt;/code&gt; to abort an incremental search an go back to the line&lt;/p&gt;
+
+&lt;h2 id=&quot;python-tricks&quot;&gt;Python tricks&lt;/h2&gt;
+
+&lt;h4 id=&quot;pretty-print-json&quot;&gt;Pretty print JSON&lt;/h4&gt;
+
+&lt;p&gt;Sometimes you need to print a json file on a readable form:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;cat file.json | python -mjson.tool&lt;/code&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;run-a-web-or-mail-server&quot;&gt;Run a web or mail server&lt;/h4&gt;
+
+&lt;p&gt;Serves the current directory in HOSTNAME:8000 or HOSTNAME:port&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;python -m SimpleHTTPServer [port]&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Imagine this scenario: you want to test an application that send email. You can install and configure an email server or use this command that prints all the received emails to the terminal:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;python -m smtpd -n -c DebuggingServer localhost:25&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Both examples demonstrate the usefulness of &lt;code class=&quot;highlighter-rouge&quot;&gt;if __name__ == '__main__'&lt;/code&gt;. In both cases the modules can be consumed as a library and as a command-line script at the same time.&lt;/p&gt;
+
+&lt;h2 id=&quot;use-rsync&quot;&gt;Use Rsync&lt;/h2&gt;
+
+&lt;p&gt;I used to upload files to my servers using ftp or scp until I discovered rsync(remote sync). Rsync copies the diffs of files that have changed, compressed and using ssh. With rsync it’s trivial to synchronize a lot of directories between servers, to do this I just need to type:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;rsync -avz /var/dir/ user@server:/var/&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;misc&quot;&gt;Misc&lt;/h2&gt;
+
+&lt;h4 id=&quot;job-control-with-disown&quot;&gt;Job control with disown&lt;/h4&gt;
+
+&lt;p&gt;This command it’s incredibly useful, sometimes you forgot to start a time consuming command with nohup or screen and you need to go offline while the command is still running. You can pause it with &lt;code class=&quot;highlighter-rouge&quot;&gt;crtl-z&lt;/code&gt; move it to the background with &lt;code class=&quot;highlighter-rouge&quot;&gt;bg&lt;/code&gt;and then protect it from SIGHUP using &lt;code class=&quot;highlighter-rouge&quot;&gt;disown&lt;/code&gt;, so you can quit your ssh session.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;disown jobID&lt;/code&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;make-a-directory-tree&quot;&gt;Make a directory tree&lt;/h4&gt;
+
+&lt;p&gt;Usually I create a directory tree one at a time:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ mkdir tmp
+$ cd tmp
+$ mkdir foo
+$ cd foo
+$ mkdir bar
+…
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;It’s faster to use the -p option of mkdir. You just need to type:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;$ mkdir -p tmp/foo/bar&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;You can use -p to create more complicated directory trees, like:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;$ mkdir -p my_project/{foo/tests,bar,settings/{dev,staging,prod},alice/bob/whatever}&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;this creates the following tree:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ tree
+.
+└── my_project
+	├── alice
+	│   └── bob
+	│  	 └── whatever
+	├── bar
+	├── foo
+	│   └── tests
+	└── settings
+		├── dev
+		├── prod
+		└── staging
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;move-a-file-without-type-the-name-twice&quot;&gt;Move a file without type the name twice&lt;/h4&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;cp ReallyLongFileNameYouDontWantToTypeTwice{,.orig}&lt;/code&gt; (&lt;a href=&quot;http://www.shell-fu.org/lister.php?id=46&quot;&gt;from shell-fu&lt;/a&gt;)&lt;/p&gt;
+
+&lt;h4 id=&quot;return-to-the-previous-directory&quot;&gt;Return to the previous directory&lt;/h4&gt;
+
+&lt;p&gt;Sometimes you are required to hop between two directories, in those cases you can use
+` cd - ` to return to the previous directory.&lt;/p&gt;
+
+&lt;h4 id=&quot;quickly-empty-a-file&quot;&gt;Quickly empty a file&lt;/h4&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt; &amp;gt;file &lt;/code&gt; empty a file&lt;/p&gt;
+
+&lt;h4 id=&quot;typing-long-or-tricky-commands&quot;&gt;Typing long or tricky commands&lt;/h4&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt; fc &lt;/code&gt; open an text editor to write your command&lt;/p&gt;
+
+&lt;h4 id=&quot;get-your-external-ip&quot;&gt;Get your external IP&lt;/h4&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt; curl ifconfig.me &lt;/code&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;make-your-terminal-talk-osx-only&quot;&gt;Make your terminal talk (OSX only)&lt;/h4&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;say &quot;hey im locked out downstairs&quot;&lt;/code&gt; (extracted from &lt;a href=&quot;http://xkcd.com/530/&quot;&gt;http://xkcd.com/530/&lt;/a&gt;)&lt;/p&gt;
+
+&lt;h4 id=&quot;ascii-username&quot;&gt;ASCII username&lt;/h4&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;banner $USER&lt;/code&gt; (ok… maybe not the most useful command)&lt;/p&gt;
+
+&lt;h4 id=&quot;ascii-movie&quot;&gt;ASCII movie&lt;/h4&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Telnet towel.blinkenlights.nl&lt;/code&gt; pop some popcorn and enjoy the show&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>My website prelaunch checklist</title>
+   <link href="http://fabiosouto.me/2012/05/my-website-prelaunch-checklist"/>
+   <updated>2012-05-18T00:00:00+02:00</updated>
+   <id>http://fabiosouto.me/2012/05/my-website-prelaunch-checklist</id>
+   <content type="html">
+&lt;p&gt;This is a document that I’ve been updating during the latest years. Obviously It’s not mandatory to
+meet all the requirements, I just use it as a reference and it helps me to reinforce good practices. Feel free to make suggestions.&lt;/p&gt;
+
+&lt;h3 id=&quot;application-testing&quot;&gt;Application testing&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Ensure all test are passing&lt;/li&gt;
+  &lt;li&gt;Stop verbose error reporting, then check 404 and 500 pages&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;backups&quot;&gt;Backups&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Set &lt;a href=&quot;https://blog.sucuri.net/2015/04/how-to-create-a-website-backup-strategy.html&quot;&gt;backup strategy &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Test backups&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;load-time&quot;&gt;Load time&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Load test (&lt;a href=&quot;&quot;&gt;blitz.io&lt;/a&gt;, &lt;a href=&quot;http://jmeter.apache.org/&quot;&gt;JMeter&lt;/a&gt;…)&lt;/li&gt;
+  &lt;li&gt;Check number of HTTP requests&lt;/li&gt;
+  &lt;li&gt;Add expires headers&lt;/li&gt;
+  &lt;li&gt;Move JS to the bottom&lt;/li&gt;
+  &lt;li&gt;Compress/minimize js/css&lt;/li&gt;
+  &lt;li&gt;Check if server it’s serving gzipped content&lt;/li&gt;
+  &lt;li&gt;Optimize images&lt;/li&gt;
+  &lt;li&gt;Enable caching&lt;/li&gt;
+  &lt;li&gt;Check indexes in the database&lt;/li&gt;
+  &lt;li&gt;Configure CDN&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;monitoring&quot;&gt;Monitoring&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Server monitoring (&lt;a href=&quot;http://munin-monitoring.org/&quot;&gt;Munin&lt;/a&gt;, &lt;a href=&quot;http://www.nagios.org/&quot;&gt;Nagios&lt;/a&gt;…)&lt;/li&gt;
+  &lt;li&gt;Setup web analytics&lt;/li&gt;
+  &lt;li&gt;Setup Feedburner&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;standards&quot;&gt;Standards&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;HTML/JS/CSS validation&lt;/li&gt;
+  &lt;li&gt;If the site use search, check &lt;a href=&quot;http://www.opensearch.org/&quot;&gt;Opensearch&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;design&quot;&gt;Design&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Check if the text-to-background contrast is adequate&lt;/li&gt;
+  &lt;li&gt;Page readability&lt;/li&gt;
+  &lt;li&gt;Navigation is easy to identify?&lt;/li&gt;
+  &lt;li&gt;Favicon and mobile icons&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;accesibilito&quot;&gt;Accesibilito&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://wave.webaim.org/&quot;&gt;Accesibility validation&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Images with alt text&lt;/li&gt;
+  &lt;li&gt;Test different resolutions and font sizes&lt;/li&gt;
+  &lt;li&gt;Test on mobile devices&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;social&quot;&gt;Social&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Check &lt;a href=&quot;http://ogp.me/&quot;&gt;Opengraph&lt;/a&gt; tags&lt;/li&gt;
+  &lt;li&gt;Add/test social buttons&lt;/li&gt;
+  &lt;li&gt;Check social button integration with Google analytics&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;seo&quot;&gt;SEO&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Redirect http://www to http://&lt;/li&gt;
+  &lt;li&gt;Check meta tags&lt;/li&gt;
+  &lt;li&gt;Add &lt;a href=&quot;http://positionly.com/blog/seo/canonical-url-tag&quot;&gt;canonical tag&lt;/a&gt; to duplicated content&lt;/li&gt;
+  &lt;li&gt;Sitemap.xml&lt;/li&gt;
+  &lt;li&gt;Check url structure&lt;/li&gt;
+  &lt;li&gt;Create a &lt;a href=&quot;https://developers.google.com/webmasters/control-crawl-index/docs/robots_txt&quot;&gt;robots.txt&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Submit to search engines&lt;/li&gt;
+  &lt;li&gt;Build some backlinks&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;legal-stuff&quot;&gt;Legal stuff&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Check terms and conditions&lt;/li&gt;
+  &lt;li&gt;EU cookie law&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;security&quot;&gt;Security&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.ssllabs.com/ssltest/&quot;&gt;Check HTTPS&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Scan vulnerabilities with an automatic tool&lt;/li&gt;
+  &lt;li&gt;CSRF token&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>New site</title>
+   <link href="http://fabiosouto.me/2012/05/new-site"/>
+   <updated>2012-05-15T00:00:00+02:00</updated>
+   <id>http://fabiosouto.me/2012/05/new-site</id>
+   <content type="html">
+&lt;p&gt;I had this site a little bit abandoned, so I decided to rewrite it one more time. This time I opted for a simpler design but the biggest change is that I decided to abandon &lt;a href=&quot;https://www.djangoproject.com/&quot;&gt;Django&lt;/a&gt; and create a static site.&lt;/p&gt;
+
+&lt;p&gt;Static sites can be hosted it on github pages, so I can save some MBs in the hosting. It’s easy to publish new content, just make a commit to the forge. Moreover, this site doesn’t need 90% of the functionality offered by Django, I was using a sledgehammer to crack nuts.&lt;/p&gt;
+
+&lt;p&gt;But of course I didn’t create the HTML files from scratch, I use &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;jekyll&quot;&gt;Jekyll?&lt;/h3&gt;
+
+&lt;p&gt;Jekyll is a static site generator developed in Ruby. It has support for markdown and integration with github pages. With the help of &lt;a href=&quot;http://jekyllbootstrap.com/&quot;&gt;Jekyll bootstrap&lt;/a&gt; I was able to create the new version in a couple of hours.&lt;/p&gt;
+
+&lt;p&gt;Jekyll is really simple, just run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll --serve&lt;/code&gt; in your project folder and it will parse the markdown and create the site. The generated site will be in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_site&lt;/code&gt; folder. Serve this folder with your static HTTP server (Nginx, Apache…) and enjoy.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/lakshmivyas/hyde&quot;&gt;Hyde&lt;/a&gt; is a similar project in Python, and it was my first option. I installed the new version but the documentation is really poor(at the time of writing). I decided to install the old version but I found &lt;a href=&quot;https://github.com/lakshmivyas/hyde/issues/54&quot;&gt;this bug&lt;/a&gt;. I realize I was spending too much time for such a simple task. Time to abandon Hyde and embrace Jekyll.&lt;/p&gt;
+
+&lt;h3 id=&quot;design&quot;&gt;Design&lt;/h3&gt;
+
+&lt;p&gt;I’m not a designer but fortunately I had Twitter bootstrap and Google fonts to help me to create a readable design. I want to create long articles, so readability it’s an important point. I tried many fonts until one day I discovered &lt;a href=&quot;http://stevelosh.com/&quot;&gt;Steve Losh&lt;/a&gt; site, I shamelessly copied his font selection.&lt;/p&gt;
+
+&lt;h3 id=&quot;show-me-the-code&quot;&gt;Show me the code&lt;/h3&gt;
+
+&lt;p&gt;The code &lt;a href=&quot;https://github.com/fsouto/fsouto.github.com&quot;&gt;is available on Github&lt;/a&gt;, feel free to check it and make suggestions.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ 
+</feed>
