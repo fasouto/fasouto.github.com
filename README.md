@@ -1,3 +1,8 @@
+# Deprecated                                                                                                                                                        
+                                                                                                                                                                      
+This site has moved to [github.com/fasouto/fabiosouto.me](https://github.com/fasouto/fabiosouto.me)       
+
+---
 
 Source code of <http://fabiosouto.me>, created with Jekyll Bootstrap <http://jekyllbootstrap.com> and [Bootstrap 3](http://getbootstrap.com/)
 
